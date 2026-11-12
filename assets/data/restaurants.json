@@ -20,7 +20,8 @@
    "color": "#8B1E3F",
    "tags": [
     "breakfast"
-   ]
+   ],
+   "photo": "masala_dosa.jpg"
   },
   {
    "id": "udupi_tiffin_corner",
@@ -41,7 +42,8 @@
    "color": "#B23A48",
    "tags": [
     "breakfast"
-   ]
+   ],
+   "photo": "masala_dosa.jpg"
   },
   {
    "id": "silk_board_biryani_co",
@@ -63,7 +65,8 @@
    "color": "#C2185B",
    "tags": [
     "bestseller"
-   ]
+   ],
+   "photo": "hyderabadi_chicken_biryani.jpg"
   },
   {
    "id": "donne_biryani_darshini",
@@ -83,7 +86,8 @@
    "baseDeliveryMins": 30,
    "emoji": "🍲",
    "color": "#6D4C41",
-   "tags": []
+   "tags": [],
+   "photo": "donne_biryani.jpg"
   },
   {
    "id": "traffic_jam_tandoor",
@@ -103,7 +107,8 @@
    "baseDeliveryMins": 32,
    "emoji": "🍢",
    "color": "#2E7D32",
-   "tags": []
+   "tags": [],
+   "photo": "paneer_tikka.jpg"
   },
   {
    "id": "thali_theory",
@@ -123,7 +128,8 @@
    "baseDeliveryMins": 28,
    "emoji": "🍱",
    "color": "#00695C",
-   "tags": []
+   "tags": [],
+   "photo": "indian_thali.jpg"
   },
   {
    "id": "code_curry",
@@ -145,7 +151,8 @@
    "color": "#1565C0",
    "tags": [
     "late night"
-   ]
+   ],
+   "photo": "paneer_tikka.jpg"
   },
   {
    "id": "byte_bite_burgers",
@@ -165,7 +172,8 @@
    "baseDeliveryMins": 25,
    "emoji": "🍔",
    "color": "#5E35B1",
-   "tags": []
+   "tags": [],
+   "photo": "chicken_burger.jpg"
   },
   {
    "id": "forno_80_ft",
@@ -185,7 +193,8 @@
    "baseDeliveryMins": 30,
    "emoji": "🍕",
    "color": "#EF6C00",
-   "tags": []
+   "tags": [],
+   "photo": "margherita_pizza.jpg"
   },
   {
    "id": "pasta_la_vista",
@@ -205,7 +214,8 @@
    "baseDeliveryMins": 33,
    "emoji": "🍝",
    "color": "#AD1457",
-   "tags": []
+   "tags": [],
+   "photo": "penne_arrabbiata.jpg"
   },
   {
    "id": "wok_on_church",
@@ -225,7 +235,8 @@
    "baseDeliveryMins": 30,
    "emoji": "🥡",
    "color": "#4E342E",
-   "tags": []
+   "tags": [],
+   "photo": "chilli_chicken.jpg"
   },
   {
    "id": "momo_mandi",
@@ -247,7 +258,8 @@
    "color": "#283593",
    "tags": [
     "late night"
-   ]
+   ],
+   "photo": "momo_dumplings.jpg"
   },
   {
    "id": "gundu_pulao_point",
@@ -269,7 +281,8 @@
    "color": "#8B1E3F",
    "tags": [
     "spicy"
-   ]
+   ],
+   "photo": "chicken_biryani_plate.jpg"
   },
   {
    "id": "coastal_kadala",
@@ -290,7 +303,8 @@
    "baseDeliveryMins": 36,
    "emoji": "🐟",
    "color": "#B23A48",
-   "tags": []
+   "tags": [],
+   "photo": "fish_thali.jpg"
   },
   {
    "id": "ragi_mudde_mane",
@@ -309,7 +323,8 @@
    "baseDeliveryMins": 26,
    "emoji": "🍚",
    "color": "#C2185B",
-   "tags": []
+   "tags": [],
+   "photo": "ragi_mudde.jpg"
   },
   {
    "id": "chaat_chowki",
@@ -329,7 +344,8 @@
    "baseDeliveryMins": 18,
    "emoji": "🥙",
    "color": "#6D4C41",
-   "tags": []
+   "tags": [],
+   "photo": "pani_puri.jpg"
   },
   {
    "id": "roll_with_it",
@@ -351,7 +367,8 @@
    "color": "#2E7D32",
    "tags": [
     "late night"
-   ]
+   ],
+   "photo": "kathi_roll.jpg"
   },
   {
    "id": "shawarma_shack",
@@ -373,7 +390,8 @@
    "color": "#00695C",
    "tags": [
     "late night"
-   ]
+   ],
+   "photo": "shawarma_wrap.jpg"
   },
   {
    "id": "green_bowl_co",
@@ -393,7 +411,8 @@
    "baseDeliveryMins": 24,
    "emoji": "🥗",
    "color": "#1565C0",
-   "tags": []
+   "tags": [],
+   "photo": "quinoa_salad_bowl.jpg"
   },
   {
    "id": "midnight_maggi_co",
@@ -415,7 +434,8 @@
    "color": "#5E35B1",
    "tags": [
     "late night"
-   ]
+   ],
+   "photo": "maggi_noodles.jpg"
   },
   {
    "id": "filter_kaapi_club",
@@ -437,7 +457,8 @@
    "color": "#EF6C00",
    "tags": [
     "breakfast"
-   ]
+   ],
+   "photo": "south_indian_filter_coffee.jpg"
   },
   {
    "id": "bakehouse_1947",
@@ -457,7 +478,8 @@
    "baseDeliveryMins": 25,
    "emoji": "🥐",
    "color": "#AD1457",
-   "tags": []
+   "tags": [],
+   "photo": "croissant.jpg"
   },
   {
    "id": "cake_walk_bakery",
@@ -477,7 +499,8 @@
    "baseDeliveryMins": 28,
    "emoji": "🎂",
    "color": "#4E342E",
-   "tags": []
+   "tags": [],
+   "photo": "black_forest_cake_slice.jpg"
   },
   {
    "id": "sugar_rush_desserts",
@@ -497,7 +520,8 @@
    "baseDeliveryMins": 22,
    "emoji": "🍨",
    "color": "#283593",
-   "tags": []
+   "tags": [],
+   "photo": "chocolate_sundae.jpg"
   },
   {
    "id": "kulfi_katte",
@@ -517,7 +541,8 @@
    "baseDeliveryMins": 18,
    "emoji": "🍦",
    "color": "#8B1E3F",
-   "tags": []
+   "tags": [],
+   "photo": "kulfi.jpg"
   }
  ]
 }
