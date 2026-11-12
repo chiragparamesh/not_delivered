@@ -64,5 +64,19 @@ My Windows laptop has low RAM: Android Studio and the Android emulator froze it.
 
 ## Status
 
-Skeleton only: folders, theme, router, placeholder home screen, CI. No features built yet.
-Update the features table in README.md (Built / Planned) as features land.
+All screens and fun features from the brief are built (see README features table).
+Data in assets/data is generated sample data (fictional restaurants); Chirag may replace it with his own JSON.
+Open question for Chirag: FREEDEL199 can never apply (delivery is already free from ₹199); implemented literally.
+WEEKEND10 has no weekday restriction (the brief gives none).
+
+## Conventions
+
+- State: Riverpod Notifiers; persistence via `KeyValueStore` (core/services/store.dart): Hive in the app, `MemoryStore` in tests.
+  Values are plain JSON (no Hive adapters / codegen).
+- Business rules are pure Dart: cart/domain/coupons.dart (coupons + bill), tracking/domain/tracking.dart (stage from time),
+  rewards/domain/rewards.dart (badges, streaks, prizes). Unit-test them in test/unit.
+- `clockProvider` and `randomProvider` are injectable; tests override them.
+- Platform features behind interfaces: `LocationService` (geolocator), `Haptics` (no-op on web).
+- Fonts are bundled (assets/fonts), never fetched at runtime (the app is offline).
+- Widget tests: `rootBundle.clear` in setUp; pumpAndSettle for page/tween animations.
+- Run `flutter analyze` and `flutter test` before every push.

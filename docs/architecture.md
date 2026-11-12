@@ -45,7 +45,7 @@ flowchart TB
 
 ## 3. Data model
 
-**Assets (provided by Chirag):** `assets/data/restaurants.json`, `assets/data/dishes.json`. The exact schema follows those files; the expected minimum:
+**Assets:** `assets/data/restaurants.json` (25), `assets/data/dishes.json` (191). Currently generated sample data (fictional restaurants, real neighbourhoods); Chirag can swap in his own files with the same fields:
 
 | Entity | Fields |
 |---|---|
@@ -83,7 +83,11 @@ total       = itemTotal + deliveryFee − discount + tip
 | WEEKEND10 | — | min(10% × itemTotal, 50) |
 | SWEETTOOTH | itemTotal ≥ 150, restaurant is dessert/bakery | 30 |
 
-Rules: one coupon at a time; a coupon is re-validated whenever the cart changes and is removed with a message if it no longer applies; discount never exceeds `itemTotal + deliveryFee`. (Note: the WEEKEND10 brief does not say "weekends only"; the name suggests it. Decide before building, and document the choice here.)
+Rules: one coupon at a time; a coupon is re-validated whenever the cart changes, and if it no longer applies the cart shows why (it stays selected so it re-applies when the cart qualifies again); discount never exceeds the item total.
+
+Decisions:
+- **WEEKEND10** has no day restriction, because the brief gives none. Making it weekends-only is a one-line change in `evaluateCoupon`.
+- **FREEDEL199** is implemented literally: it waives the delivery fee on orders of ₹199+, but delivery is already free from ₹199, so it never saves anything. The coupon sheet says "Delivery is already free on this order". Fix options: lower its minimum (e.g. ₹99), or raise the free-delivery threshold.
 
 The engine is pure Dart with full unit tests for every boundary (₹148/₹149, ₹198/₹199, cap hits).
 
@@ -95,7 +99,7 @@ A timer-driven state machine (no backend):
 placed → confirmed → preparing → picked_up → on_the_way → delivered
 ```
 
-Each stage lasts a randomized few seconds to minutes. Funny messages are drawn per stage ("Rider stuck at Silk Board…"). A rare roll (~1–2%) shows the **"Not Delivered… just kidding!"** easter egg before delivering. State is persisted, so the app can be killed and resumed: elapsed time is computed from timestamps.
+Stages start at 0, 8, 20, 60, 75 and 150 seconds (a short demo timeline; "Skip to delivery (demo)" jumps ahead). Funny messages are drawn per stage ("Rider stuck at Silk Board…"). A rare roll (2%) shows the **"Not Delivered… just kidding!"** easter egg before delivering. State is persisted, so the app can be killed and resumed: elapsed time is computed from timestamps.
 
 On `delivered`: scratch card, savings counter update, streak/badge evaluation.
 
@@ -110,18 +114,18 @@ On `delivered`: scratch card, savings counter update, streak/badge evaluation.
 
 Platform-specific code sits behind interfaces in `lib/core/services/`.
 
-## 7. Planned packages
+## 7. Packages
 
-`hive_ce` + `hive_ce_flutter`, `confetti`, `geolocator`, `scratcher` (or a custom painter), `flutter_fortune_wheel` (or a custom painter). Fonts: Poppins and Inter bundled in `assets/fonts/` (offline, no runtime download).
+`flutter_riverpod`, `go_router`, `hive_ce` + `hive_ce_flutter`, `confetti`, `geolocator`. Scratch card and spin wheel are custom painters (no extra packages). Fonts: Poppins and Inter bundled in `assets/fonts/` (offline).
 
 ## 8. Roadmap
 
 | Phase | Scope |
 |---|---|
 | 0 ✅ | Skeleton, brand theme, router, CI APK build |
-| 1 | Bundle fonts, catalog repository over the provided JSON, home + chips + filters, search, menu |
-| 2 | Cart, pricing + coupon engine with tests, tip, checkout (demo payment banner) |
-| 3 | Tracking state machine, order history, reorder, Hive persistence |
-| 4 | Splash, onboarding, location, favorites, profile, notifications |
-| 5 | Confetti, haptics, scratch card, savings counter, badges, streaks, spin wheel, easter egg |
+| 1 ✅ | Bundle fonts, catalog repository over the provided JSON, home + chips + filters, search, menu |
+| 2 ✅ | Cart, pricing + coupon engine with tests, tip, checkout (demo payment banner) |
+| 3 ✅ | Tracking state machine, order history, reorder, Hive persistence |
+| 4 ✅ | Splash, onboarding, location, favorites, profile, notifications |
+| 5 ✅ | Confetti, haptics, scratch card, savings counter, badges, streaks, spin wheel, easter egg |
 | 6 | Polish: animations, empty states, accessibility, screenshots |

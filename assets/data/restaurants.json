@@ -1,0 +1,523 @@
+{
+ "_note": "Sample data for Not Delivered: fictional restaurants in real Bengaluru neighbourhoods. Replace with your own JSON using the same fields.",
+ "restaurants": [
+  {
+   "id": "namma_dosa_mane",
+   "name": "Namma Dosa Mane",
+   "area": "Jayanagar",
+   "lat": 12.92289,
+   "lon": 77.58961,
+   "cuisines": [
+    "South Indian"
+   ],
+   "category": "restaurant",
+   "pureVeg": true,
+   "rating": 4.4,
+   "ratingCount": 180,
+   "priceForTwo": 250,
+   "baseDeliveryMins": 22,
+   "emoji": "🥞",
+   "color": "#8B1E3F",
+   "tags": [
+    "breakfast"
+   ]
+  },
+  {
+   "id": "udupi_tiffin_corner",
+   "name": "Udupi Tiffin Corner",
+   "area": "Malleshwaram",
+   "lat": 13.0027,
+   "lon": 77.56584,
+   "cuisines": [
+    "South Indian"
+   ],
+   "category": "restaurant",
+   "pureVeg": true,
+   "rating": 3.9,
+   "ratingCount": 1200,
+   "priceForTwo": 200,
+   "baseDeliveryMins": 20,
+   "emoji": "🍛",
+   "color": "#B23A48",
+   "tags": [
+    "breakfast"
+   ]
+  },
+  {
+   "id": "silk_board_biryani_co",
+   "name": "Silk Board Biryani Co.",
+   "area": "BTM Layout",
+   "lat": 12.9112,
+   "lon": 77.60675,
+   "cuisines": [
+    "Biryani",
+    "North Indian"
+   ],
+   "category": "restaurant",
+   "pureVeg": false,
+   "rating": 4.3,
+   "ratingCount": 420,
+   "priceForTwo": 450,
+   "baseDeliveryMins": 35,
+   "emoji": "🍗",
+   "color": "#C2185B",
+   "tags": [
+    "bestseller"
+   ]
+  },
+  {
+   "id": "donne_biryani_darshini",
+   "name": "Donne Biryani Darshini",
+   "area": "JP Nagar",
+   "lat": 12.91009,
+   "lon": 77.58187,
+   "cuisines": [
+    "Biryani",
+    "Karnataka"
+   ],
+   "category": "restaurant",
+   "pureVeg": false,
+   "rating": 4.3,
+   "ratingCount": 5100,
+   "priceForTwo": 350,
+   "baseDeliveryMins": 30,
+   "emoji": "🍲",
+   "color": "#6D4C41",
+   "tags": []
+  },
+  {
+   "id": "traffic_jam_tandoor",
+   "name": "Traffic Jam Tandoor",
+   "area": "Koramangala",
+   "lat": 12.93167,
+   "lon": 77.62666,
+   "cuisines": [
+    "North Indian",
+    "Mughlai"
+   ],
+   "category": "restaurant",
+   "pureVeg": false,
+   "rating": 4.2,
+   "ratingCount": 860,
+   "priceForTwo": 600,
+   "baseDeliveryMins": 32,
+   "emoji": "🍢",
+   "color": "#2E7D32",
+   "tags": []
+  },
+  {
+   "id": "thali_theory",
+   "name": "Thali Theory",
+   "area": "JP Nagar",
+   "lat": 12.90719,
+   "lon": 77.586,
+   "cuisines": [
+    "North Indian",
+    "Thali"
+   ],
+   "category": "restaurant",
+   "pureVeg": true,
+   "rating": 4.6,
+   "ratingCount": 5100,
+   "priceForTwo": 400,
+   "baseDeliveryMins": 28,
+   "emoji": "🍱",
+   "color": "#00695C",
+   "tags": []
+  },
+  {
+   "id": "code_curry",
+   "name": "Code & Curry",
+   "area": "Electronic City",
+   "lat": 12.84829,
+   "lon": 77.65602,
+   "cuisines": [
+    "North Indian",
+    "Chinese"
+   ],
+   "category": "restaurant",
+   "pureVeg": false,
+   "rating": 4.2,
+   "ratingCount": 180,
+   "priceForTwo": 400,
+   "baseDeliveryMins": 30,
+   "emoji": "💻",
+   "color": "#1565C0",
+   "tags": [
+    "late night"
+   ]
+  },
+  {
+   "id": "byte_bite_burgers",
+   "name": "Byte & Bite Burgers",
+   "area": "Whitefield",
+   "lat": 12.97336,
+   "lon": 77.74483,
+   "cuisines": [
+    "Burgers",
+    "Fast Food"
+   ],
+   "category": "restaurant",
+   "pureVeg": false,
+   "rating": 3.9,
+   "ratingCount": 860,
+   "priceForTwo": 450,
+   "baseDeliveryMins": 25,
+   "emoji": "🍔",
+   "color": "#5E35B1",
+   "tags": []
+  },
+  {
+   "id": "forno_80_ft",
+   "name": "Forno 80 Ft",
+   "area": "Indiranagar",
+   "lat": 12.97654,
+   "lon": 77.63936,
+   "cuisines": [
+    "Pizza",
+    "Italian"
+   ],
+   "category": "restaurant",
+   "pureVeg": false,
+   "rating": 4.6,
+   "ratingCount": 860,
+   "priceForTwo": 700,
+   "baseDeliveryMins": 30,
+   "emoji": "🍕",
+   "color": "#EF6C00",
+   "tags": []
+  },
+  {
+   "id": "pasta_la_vista",
+   "name": "Pasta La Vista",
+   "area": "Koramangala",
+   "lat": 12.93806,
+   "lon": 77.62327,
+   "cuisines": [
+    "Italian",
+    "Pizza"
+   ],
+   "category": "restaurant",
+   "pureVeg": false,
+   "rating": 4.6,
+   "ratingCount": 1200,
+   "priceForTwo": 750,
+   "baseDeliveryMins": 33,
+   "emoji": "🍝",
+   "color": "#AD1457",
+   "tags": []
+  },
+  {
+   "id": "wok_on_church",
+   "name": "Wok on Church",
+   "area": "MG Road",
+   "lat": 12.97997,
+   "lon": 77.60394,
+   "cuisines": [
+    "Chinese",
+    "Asian"
+   ],
+   "category": "restaurant",
+   "pureVeg": false,
+   "rating": 4.2,
+   "ratingCount": 860,
+   "priceForTwo": 550,
+   "baseDeliveryMins": 30,
+   "emoji": "🥡",
+   "color": "#4E342E",
+   "tags": []
+  },
+  {
+   "id": "momo_mandi",
+   "name": "Momo Mandi",
+   "area": "BTM Layout",
+   "lat": 12.91074,
+   "lon": 77.61407,
+   "cuisines": [
+    "Momos",
+    "Tibetan"
+   ],
+   "category": "restaurant",
+   "pureVeg": false,
+   "rating": 4.0,
+   "ratingCount": 860,
+   "priceForTwo": 300,
+   "baseDeliveryMins": 22,
+   "emoji": "🥟",
+   "color": "#283593",
+   "tags": [
+    "late night"
+   ]
+  },
+  {
+   "id": "gundu_pulao_point",
+   "name": "Gundu Pulao Point",
+   "area": "Marathahalli",
+   "lat": 12.95472,
+   "lon": 77.69661,
+   "cuisines": [
+    "Andhra",
+    "Biryani"
+   ],
+   "category": "restaurant",
+   "pureVeg": false,
+   "rating": 4.6,
+   "ratingCount": 2300,
+   "priceForTwo": 450,
+   "baseDeliveryMins": 34,
+   "emoji": "🌶️",
+   "color": "#8B1E3F",
+   "tags": [
+    "spicy"
+   ]
+  },
+  {
+   "id": "coastal_kadala",
+   "name": "Coastal Kadala",
+   "area": "Koramangala",
+   "lat": 12.93498,
+   "lon": 77.62331,
+   "cuisines": [
+    "Kerala",
+    "Mangalorean",
+    "Seafood"
+   ],
+   "category": "restaurant",
+   "pureVeg": false,
+   "rating": 4.0,
+   "ratingCount": 420,
+   "priceForTwo": 700,
+   "baseDeliveryMins": 36,
+   "emoji": "🐟",
+   "color": "#B23A48",
+   "tags": []
+  },
+  {
+   "id": "ragi_mudde_mane",
+   "name": "Ragi Mudde Mane",
+   "area": "Basavanagudi",
+   "lat": 12.943,
+   "lon": 77.57414,
+   "cuisines": [
+    "Karnataka"
+   ],
+   "category": "restaurant",
+   "pureVeg": false,
+   "rating": 4.7,
+   "ratingCount": 2300,
+   "priceForTwo": 350,
+   "baseDeliveryMins": 26,
+   "emoji": "🍚",
+   "color": "#C2185B",
+   "tags": []
+  },
+  {
+   "id": "chaat_chowki",
+   "name": "Chaat Chowki",
+   "area": "Malleshwaram",
+   "lat": 13.00473,
+   "lon": 77.57069,
+   "cuisines": [
+    "Chaat",
+    "Street Food"
+   ],
+   "category": "restaurant",
+   "pureVeg": true,
+   "rating": 3.9,
+   "ratingCount": 1200,
+   "priceForTwo": 200,
+   "baseDeliveryMins": 18,
+   "emoji": "🥙",
+   "color": "#6D4C41",
+   "tags": []
+  },
+  {
+   "id": "roll_with_it",
+   "name": "Roll With It",
+   "area": "HSR Layout",
+   "lat": 12.9146,
+   "lon": 77.65028,
+   "cuisines": [
+    "Rolls",
+    "Fast Food"
+   ],
+   "category": "restaurant",
+   "pureVeg": false,
+   "rating": 4.2,
+   "ratingCount": 5100,
+   "priceForTwo": 300,
+   "baseDeliveryMins": 20,
+   "emoji": "🌯",
+   "color": "#2E7D32",
+   "tags": [
+    "late night"
+   ]
+  },
+  {
+   "id": "shawarma_shack",
+   "name": "Shawarma Shack",
+   "area": "Marathahalli",
+   "lat": 12.95918,
+   "lon": 77.70607,
+   "cuisines": [
+    "Arabian",
+    "Rolls"
+   ],
+   "category": "restaurant",
+   "pureVeg": false,
+   "rating": 4.5,
+   "ratingCount": 860,
+   "priceForTwo": 400,
+   "baseDeliveryMins": 27,
+   "emoji": "🥙",
+   "color": "#00695C",
+   "tags": [
+    "late night"
+   ]
+  },
+  {
+   "id": "green_bowl_co",
+   "name": "Green Bowl Co.",
+   "area": "HSR Layout",
+   "lat": 12.91199,
+   "lon": 77.65075,
+   "cuisines": [
+    "Healthy",
+    "Salads"
+   ],
+   "category": "restaurant",
+   "pureVeg": true,
+   "rating": 4.1,
+   "ratingCount": 420,
+   "priceForTwo": 500,
+   "baseDeliveryMins": 24,
+   "emoji": "🥗",
+   "color": "#1565C0",
+   "tags": []
+  },
+  {
+   "id": "midnight_maggi_co",
+   "name": "Midnight Maggi Co.",
+   "area": "BTM Layout",
+   "lat": 12.91651,
+   "lon": 77.61287,
+   "cuisines": [
+    "Snacks",
+    "Beverages"
+   ],
+   "category": "cafe",
+   "pureVeg": true,
+   "rating": 4.7,
+   "ratingCount": 860,
+   "priceForTwo": 200,
+   "baseDeliveryMins": 18,
+   "emoji": "🍜",
+   "color": "#5E35B1",
+   "tags": [
+    "late night"
+   ]
+  },
+  {
+   "id": "filter_kaapi_club",
+   "name": "Filter Kaapi Club",
+   "area": "Basavanagudi",
+   "lat": 12.94766,
+   "lon": 77.57208,
+   "cuisines": [
+    "Cafe",
+    "Beverages"
+   ],
+   "category": "cafe",
+   "pureVeg": true,
+   "rating": 4.0,
+   "ratingCount": 420,
+   "priceForTwo": 250,
+   "baseDeliveryMins": 20,
+   "emoji": "☕",
+   "color": "#EF6C00",
+   "tags": [
+    "breakfast"
+   ]
+  },
+  {
+   "id": "bakehouse_1947",
+   "name": "Bakehouse 1947",
+   "area": "Basavanagudi",
+   "lat": 12.94629,
+   "lon": 77.57345,
+   "cuisines": [
+    "Bakery",
+    "Desserts"
+   ],
+   "category": "bakery",
+   "pureVeg": true,
+   "rating": 4.4,
+   "ratingCount": 5100,
+   "priceForTwo": 300,
+   "baseDeliveryMins": 25,
+   "emoji": "🥐",
+   "color": "#AD1457",
+   "tags": []
+  },
+  {
+   "id": "cake_walk_bakery",
+   "name": "Cake Walk Bakery",
+   "area": "Whitefield",
+   "lat": 12.96954,
+   "lon": 77.74614,
+   "cuisines": [
+    "Bakery",
+    "Desserts"
+   ],
+   "category": "bakery",
+   "pureVeg": false,
+   "rating": 4.5,
+   "ratingCount": 860,
+   "priceForTwo": 400,
+   "baseDeliveryMins": 28,
+   "emoji": "🎂",
+   "color": "#4E342E",
+   "tags": []
+  },
+  {
+   "id": "sugar_rush_desserts",
+   "name": "Sugar Rush Desserts",
+   "area": "Indiranagar",
+   "lat": 12.96623,
+   "lon": 77.64229,
+   "cuisines": [
+    "Desserts",
+    "Ice Cream"
+   ],
+   "category": "dessert",
+   "pureVeg": true,
+   "rating": 4.2,
+   "ratingCount": 5100,
+   "priceForTwo": 350,
+   "baseDeliveryMins": 22,
+   "emoji": "🍨",
+   "color": "#283593",
+   "tags": []
+  },
+  {
+   "id": "kulfi_katte",
+   "name": "Kulfi Katte",
+   "area": "Jayanagar",
+   "lat": 12.92558,
+   "lon": 77.58806,
+   "cuisines": [
+    "Desserts",
+    "Ice Cream"
+   ],
+   "category": "dessert",
+   "pureVeg": true,
+   "rating": 4.5,
+   "ratingCount": 5100,
+   "priceForTwo": 200,
+   "baseDeliveryMins": 18,
+   "emoji": "🍦",
+   "color": "#8B1E3F",
+   "tags": []
+  }
+ ]
+}
