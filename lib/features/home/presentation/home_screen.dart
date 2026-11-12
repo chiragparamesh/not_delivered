@@ -51,7 +51,7 @@ class _HomeScreenState extends ConsumerState<HomeScreen> {
       if (_cuisine != null && !r.cuisines.contains(_cuisine)) return false;
       if (_pureVeg && !r.pureVeg) return false;
       if (_rating4 && r.rating < 4.2) return false;
-      if (_fast && ref.read(etaProvider(r)) > 30) return false;
+      if (_fast && ref.read(etaProvider(r)).totalMins > 30) return false;
       if (_cheap && r.priceForTwo > 300) return false;
       return true;
     }).toList();
@@ -59,11 +59,11 @@ class _HomeScreenState extends ConsumerState<HomeScreen> {
       case SortBy.rating:
         list.sort((a, b) => b.rating.compareTo(a.rating));
       case SortBy.deliveryTime:
-        list.sort((a, b) => ref.read(etaProvider(a)).compareTo(ref.read(etaProvider(b))));
+        list.sort((a, b) => ref.read(etaProvider(a)).totalMins.compareTo(ref.read(etaProvider(b)).totalMins));
       case SortBy.costLow:
         list.sort((a, b) => a.priceForTwo.compareTo(b.priceForTwo));
       case SortBy.relevance:
-        list.sort((a, b) => (b.rating * 10 - ref.read(etaProvider(b)) / 3).compareTo(a.rating * 10 - ref.read(etaProvider(a)) / 3));
+        list.sort((a, b) => (b.rating * 10 - ref.read(etaProvider(b)).totalMins / 3).compareTo(a.rating * 10 - ref.read(etaProvider(a)).totalMins / 3));
     }
     return list;
   }
@@ -86,8 +86,10 @@ class _HomeScreenState extends ConsumerState<HomeScreen> {
           onTap: () => context.push(AppRoutes.location),
           child: Column(crossAxisAlignment: CrossAxisAlignment.start, children: [
             Row(mainAxisSize: MainAxisSize.min, children: [
-              const Icon(Icons.location_on, color: AppColors.maroon, size: 20),
-              Text(settings.area ?? 'Choose area', style: theme.textTheme.titleMedium),
+              Icon(settings.fromGps ? Icons.my_location : Icons.location_on, color: AppColors.maroon, size: 20),
+              const SizedBox(width: 4),
+              Text(settings.area == null ? 'Choose area' : '${settings.fromGps ? 'Near ' : ''}${settings.area}',
+                  style: theme.textTheme.titleMedium),
               const Icon(Icons.keyboard_arrow_down),
             ]),
             if (settings.address.isNotEmpty)

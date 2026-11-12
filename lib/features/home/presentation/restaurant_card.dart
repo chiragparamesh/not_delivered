@@ -3,6 +3,7 @@ import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:go_router/go_router.dart';
 
 import '../../../core/router/app_router.dart';
+import '../../../core/services/clock.dart';
 import '../../../core/theme/app_theme.dart';
 import '../../../core/widgets/common.dart';
 import '../../catalog/domain/models.dart';
@@ -10,11 +11,16 @@ import '../../favorites/data/favorites_controller.dart';
 import '../../location/domain/areas.dart';
 import '../../settings/data/settings_controller.dart';
 
-/// Delivery estimate from the chosen area to this restaurant.
-final etaProvider = Provider.family<int, Restaurant>((ref, r) {
-  final area = areaByName(ref.watch(settingsProvider).area ?? 'Koramangala');
-  return deliveryMinutes(r.baseDeliveryMins, distanceKm(area.lat, area.lon, r.lat, r.lon));
+/// Distance from the delivery point (exact GPS fix or chosen locality) to the restaurant.
+final distanceProvider = Provider.family<double, Restaurant>((ref, r) {
+  final s = ref.watch(settingsProvider);
+  final fallback = areaByName(s.area ?? 'Koramangala');
+  return distanceKm(s.lat ?? fallback.lat, s.lon ?? fallback.lon, r.lat, r.lon);
 });
+
+/// Realistic delivery estimate (kitchen + distance + traffic).
+final etaProvider = Provider.family<Eta, Restaurant>((ref, r) =>
+    estimateDelivery(baseMins: r.baseDeliveryMins, km: ref.watch(distanceProvider(r)), now: ref.watch(clockProvider)()));
 
 class RestaurantCard extends ConsumerWidget {
   const RestaurantCard({super.key, required this.restaurant});
@@ -34,7 +40,7 @@ class RestaurantCard extends ConsumerWidget {
         child: Padding(
           padding: const EdgeInsets.all(12),
           child: Row(children: [
-            EmojiTile(emoji: r.emoji, color: Color(r.color), size: 84),
+            FoodImage(photo: r.photo, emoji: r.emoji, color: Color(r.color), size: 84),
             const SizedBox(width: 12),
             Expanded(
               child: Column(crossAxisAlignment: CrossAxisAlignment.start, children: [
@@ -51,7 +57,7 @@ class RestaurantCard extends ConsumerWidget {
                   RatingPill(rating: r.rating),
                   const SizedBox(width: 8),
                   Flexible(
-                    child: Text('$eta mins · ₹${r.priceForTwo} for two',
+                    child: Text('${eta.label} · ${ref.watch(distanceProvider(r)).toStringAsFixed(1)} km · ₹${r.priceForTwo} for two',
                         style: theme.textTheme.bodySmall, maxLines: 1, overflow: TextOverflow.ellipsis),
                   ),
                 ]),

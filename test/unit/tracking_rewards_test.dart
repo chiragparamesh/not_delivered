@@ -16,36 +16,47 @@ void main() {
   final t0 = DateTime(2026, 11, 12, 13);
 
   group('tracking', () {
-    TrackingStage at(int s, {bool egg = false}) =>
-        trackingStatus(placedAt: t0, now: t0.add(Duration(seconds: s)), easterEgg: egg).stage;
+    // A 35-minute order whose kitchen needs 15 minutes.
+    TrackingStatus st(int sec, {bool egg = false}) =>
+        trackingStatus(placedAt: t0, now: t0.add(Duration(seconds: sec)), easterEgg: egg, etaMins: 35, prepMins: 15);
 
-    test('stages follow the timeline', () {
-      expect(at(0), TrackingStage.placed);
-      expect(at(8), TrackingStage.confirmed);
-      expect(at(30), TrackingStage.preparing);
-      expect(at(70), TrackingStage.pickedUp);
-      expect(at(100), TrackingStage.onTheWay);
-      expect(at(150), TrackingStage.delivered);
+    test('stages follow a realistic timeline that ends at the ETA', () {
+      expect(st(0).stage, TrackingStage.placed);
+      expect(st(60).stage, TrackingStage.confirmed);
+      expect(st(5 * 60).stage, TrackingStage.preparing);
+      expect(st(17 * 60).stage, TrackingStage.pickedUp);
+      expect(st(25 * 60).stage, TrackingStage.onTheWay);
+      expect(st(35 * 60 - 1).stage, TrackingStage.onTheWay);
+      expect(st(35 * 60).stage, TrackingStage.delivered);
+      expect(st(10 * 60).secondsLeft, 25 * 60);
+    });
+
+    test('stage order holds for short and long ETAs', () {
+      for (final (eta, prep) in [(20, 10), (25, 22), (60, 20), (90, 15)]) {
+        final s = stageStarts(etaMins: eta, prepMins: prep);
+        final times = TrackingStage.values.map((x) => s[x]!).toList();
+        for (var i = 1; i < times.length; i++) {
+          expect(times[i], greaterThan(times[i - 1]), reason: 'eta $eta prep $prep');
+        }
+        expect(times.last, eta * 60);
+      }
     });
 
     test('Silk Board message shows up on the way', () {
-      final msgs = {
-        for (var s = 75; s < 150; s++) trackingStatus(placedAt: t0, now: t0.add(Duration(seconds: s)), easterEgg: false).message,
-      };
+      final msgs = {for (var sec = 17 * 60; sec < 35 * 60; sec += 20) st(sec).message};
       expect(msgs.any((m) => m.contains('Silk Board')), isTrue);
     });
 
     test('easter egg plays just before delivery, only for lucky orders', () {
-      bool egg(int s, bool lucky) => trackingStatus(placedAt: t0, now: t0.add(Duration(seconds: s)), easterEgg: lucky).showEasterEgg;
-      expect(egg(146, true), isTrue);
-      expect(egg(146, false), isFalse);
-      expect(egg(150, true), isFalse);
-      expect(egg(100, true), isFalse);
+      expect(st(35 * 60 - 4, egg: true).showEasterEgg, isTrue);
+      expect(st(35 * 60 - 4).showEasterEgg, isFalse);
+      expect(st(35 * 60, egg: true).showEasterEgg, isFalse);
+      expect(st(20 * 60, egg: true).showEasterEgg, isFalse);
     });
 
     test('a delivered order stays delivered', () {
-      final st = trackingStatus(placedAt: t0, now: t0.add(const Duration(seconds: 5)), easterEgg: false, deliveredAt: t0);
-      expect(st.stage, TrackingStage.delivered);
+      final s = trackingStatus(placedAt: t0, now: t0.add(const Duration(seconds: 5)), easterEgg: false, etaMins: 35, prepMins: 15, deliveredAt: t0);
+      expect(s.stage, TrackingStage.delivered);
     });
   });
 
@@ -81,16 +92,23 @@ void main() {
   });
 
   group('location', () {
-    test('GPS fix maps to the nearest area; far away = null', () {
-      expect(nearestArea(12.9355, 77.6250)?.name, 'Koramangala');
-      expect(nearestArea(13.0040, 77.5700)?.name, 'Malleshwaram');
+    test('GPS fix maps to the nearest of ~50 localities; far away = null', () {
+      expect(nearestArea(12.9355, 77.6250)!.$1.name, 'Koramangala');
+      expect(nearestArea(12.9940, 77.5405)!.$1.name, 'Basaveshwaranagar');
+      expect(nearestArea(13.1000, 77.5960)!.$1.name, 'Yelahanka');
+      expect(nearestArea(12.9940, 77.5405)!.$2, lessThan(1));
       expect(nearestArea(19.0760, 72.8777), isNull); // Mumbai
     });
 
-    test('delivery minutes grow with distance', () {
-      expect(deliveryMinutes(20, 0), 20);
-      expect(deliveryMinutes(20, 8), 40);
-      expect(deliveryMinutes(5, 0), 15);
+    test('realistic ETA: kitchen + distance + traffic, never under 20 min', () {
+      final offPeak = DateTime(2026, 11, 12, 14); // Thursday afternoon
+      final peak = DateTime(2026, 11, 12, 19); // Thursday evening
+      expect(estimateDelivery(baseMins: 20, km: 0.5, now: offPeak).totalMins, 20);
+      final far = estimateDelivery(baseMins: 30, km: 8, now: offPeak);
+      expect(far.prepMins, 20);
+      expect(far.totalMins, 20 + 5 + 32);
+      expect(estimateDelivery(baseMins: 30, km: 8, now: peak).totalMins, greaterThan(far.totalMins));
+      expect(far.label, '57–62 mins');
     });
   });
 }

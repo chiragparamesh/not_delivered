@@ -11,14 +11,15 @@ A fully offline food-delivery app for Bengaluru, built for fun. It has the whole
 | Feature | Status |
 |---|---|
 | Splash, 3-slide onboarding | ✅ Built |
-| Location: GPS with manual area fallback (12 Bengaluru areas), delivery time by distance | ✅ Built |
+| Location: exact GPS position (labelled with the nearest of 50 Bengaluru localities) with searchable manual fallback | ✅ Built |
+| Realistic delivery estimates: kitchen time + distance + peak-hour traffic (e.g. "35–40 mins · 4.2 km") | ✅ Built |
 | Home: cuisine chips, filters (pure veg, rating, under 30 mins, cost), sorting | ✅ Built |
 | Search across restaurants, cuisines, areas and dishes | ✅ Built |
 | Restaurant menu: sections, veg/non-veg marks, bestsellers, veg-only toggle, favourites | ✅ Built |
 | Cart from one restaurant (replace-cart prompt), tip, live bill | ✅ Built |
 | Coupon engine: 6 coupons, one at a time, with reasons when a coupon doesn't apply | ✅ Built |
 | Checkout with simulated payment, clearly labelled as a demo | ✅ Built |
-| Timer-based order tracking with funny messages ("Rider stuck at Silk Board…") | ✅ Built |
+| Real-time order tracking to the promised ETA ("Arriving by 8:42 pm") with funny messages ("Rider stuck at Silk Board…") | ✅ Built |
 | Confetti + haptics on order | ✅ Built |
 | Scratch card after delivery | ✅ Built |
 | Rare "Not Delivered… just kidding!" easter egg (2% of orders) | ✅ Built |
@@ -26,6 +27,7 @@ A fully offline food-delivery app for Bengaluru, built for fun. It has the whole
 | Favourites, profile, notifications | ✅ Built |
 | Savings counter, 7 badges, order streaks, reward points | ✅ Built |
 | Daily spin wheel | ✅ Built |
+| Real food photos (Wikimedia Commons, free licences, credited in-app) bundled offline | ✅ Built |
 | Everything stored offline in Hive | ✅ Built |
 
 ### Pricing rules
@@ -76,6 +78,8 @@ Full design: [docs/architecture.md](docs/architecture.md).
 ## Data
 
 `assets/data/restaurants.json` (25 restaurants) and `assets/data/dishes.json` (191 dishes) are **sample data**: fictional restaurants in real Bengaluru neighbourhoods. To use your own, keep the same fields (see `lib/features/catalog/domain/models.dart`).
+
+Food photos in `assets/images/dishes/` come from [Wikimedia Commons](https://commons.wikimedia.org) under free licences (CC0 / CC BY / CC BY-SA / public domain). Each photo's author, licence and source page are listed in `assets/data/photo_credits.json` and in the app (Profile → Photo credits). Photos are illustrative; the restaurants are fictional.
 
 ## Tests
 

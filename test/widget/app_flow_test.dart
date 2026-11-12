@@ -66,7 +66,9 @@ void main() {
     // Location: GPS unavailable -> manual fallback.
     await tester.tap(find.byKey(const Key('use-gps')));
     await tester.pump(const Duration(milliseconds: 300));
-    expect(find.textContaining('Pick your area'), findsOneWidget);
+    expect(find.textContaining('pick your area'), findsOneWidget);
+    await tester.enterText(find.byKey(const Key('area-search')), 'jaya');
+    await tester.pump();
     await tester.tap(find.byKey(const ValueKey('area-Jayanagar')));
     await _settle(tester);
 
@@ -109,7 +111,8 @@ void main() {
 
     // Tracking.
     expect(find.textContaining('Arriving in'), findsOneWidget);
-    clock.now = clock.now.add(const Duration(seconds: 90));
+    expect(find.textContaining('by '), findsWidgets);
+    clock.now = clock.now.add(const Duration(minutes: 18)); // ~21-min order, kitchen ~14 min
     await tester.pump(const Duration(seconds: 1));
     expect(find.text('On the way'), findsWidgets);
     await tester.tap(find.byKey(const Key('skip-delivery')));

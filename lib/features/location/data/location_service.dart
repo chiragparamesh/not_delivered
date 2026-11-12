@@ -1,3 +1,4 @@
+import 'package:flutter/foundation.dart' show kIsWeb;
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:geolocator/geolocator.dart';
 
@@ -16,11 +17,17 @@ class GeolocatorLocationService implements LocationService {
       if (permission == LocationPermission.denied) permission = await Geolocator.requestPermission();
       if (permission == LocationPermission.denied || permission == LocationPermission.deniedForever) return null;
       final p = await Geolocator.getCurrentPosition(
-        locationSettings: const LocationSettings(accuracy: LocationAccuracy.medium, timeLimit: Duration(seconds: 12)),
+        locationSettings: const LocationSettings(accuracy: LocationAccuracy.high, timeLimit: Duration(seconds: 20)),
       );
       return (p.latitude, p.longitude);
     } catch (_) {
-      return null;
+      if (kIsWeb) return null;
+      try {
+        final last = await Geolocator.getLastKnownPosition();
+        return last == null ? null : (last.latitude, last.longitude);
+      } catch (_) {
+        return null;
+      }
     }
   }
 }

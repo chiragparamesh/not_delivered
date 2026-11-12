@@ -68,6 +68,9 @@ All screens and fun features from the brief are built (see README features table
 Data in assets/data is generated sample data (fictional restaurants); Chirag may replace it with his own JSON.
 Open question for Chirag: FREEDEL199 can never apply (delivery is already free from ₹199); implemented literally.
 WEEKEND10 has no weekday restriction (the brief gives none).
+Realism pass: ETA = kitchen + distance + traffic (location/domain/areas.dart `estimateDelivery`), tracking runs to the ETA,
+GPS keeps exact coordinates (50 localities for labels), dish photos from Wikimedia Commons with credits
+(assets/data/photo_credits.json, Profile → Photo credits). Photo pipeline scripts are not in the repo; photos map via `photo` fields.
 
 ## Conventions
 

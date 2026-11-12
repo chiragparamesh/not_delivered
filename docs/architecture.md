@@ -99,9 +99,13 @@ A timer-driven state machine (no backend):
 placed → confirmed → preparing → picked_up → on_the_way → delivered
 ```
 
-Stages start at 0, 8, 20, 60, 75 and 150 seconds (a short demo timeline; "Skip to delivery (demo)" jumps ahead). Funny messages are drawn per stage ("Rider stuck at Silk Board…"). A rare roll (2%) shows the **"Not Delivered… just kidding!"** easter egg before delivering. State is persisted, so the app can be killed and resumed: elapsed time is computed from timestamps.
+Stages run on the real clock up to the promised ETA: confirmed after ~1 min, preparing from 2 min until the kitchen time (+2 min), picked up, then on the way until the ETA. The ETA itself = kitchen time (65% of the restaurant's base time, min 10) + 5 min pickup/handover + ~4 min per km, +35% on weekday peaks (8–11, 17–21), never under 20 min. The order stores its ETA, so tracking survives app restarts. "Skip to delivery (demo)" remains for quick demos. Funny messages are drawn per stage ("Rider stuck at Silk Board…"). A rare roll (2%) shows the **"Not Delivered… just kidding!"** easter egg before delivering. State is persisted, so the app can be killed and resumed: elapsed time is computed from timestamps.
 
 On `delivered`: scratch card, savings counter update, streak/badge evaluation.
+
+## 5b. Location
+
+GPS gives exact coordinates, which are stored and used for every distance/ETA. The label is the nearest of ~50 Bengaluru localities ("Near Basaveshwaranagar"). Outside Bengaluru (> 8 km from any locality) or without permission, the user picks from a searchable locality list (its centre becomes the delivery point).
 
 ## 6. Platform features and web preview
 

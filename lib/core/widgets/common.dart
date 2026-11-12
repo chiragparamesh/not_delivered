@@ -111,3 +111,34 @@ class QtyButton extends StatelessWidget {
     );
   }
 }
+
+/// Real food photo (bundled, offline) with the emoji tile as fallback.
+class FoodImage extends StatelessWidget {
+  const FoodImage({super.key, required this.photo, required this.emoji, required this.color, this.size = 72, this.radius = 16, this.width});
+
+  final String? photo;
+  final String emoji;
+  final Color color;
+  final double size;
+  final double radius;
+
+  /// Optional width when the image should not be square (e.g. headers).
+  final double? width;
+
+  @override
+  Widget build(BuildContext context) {
+    final fallback = EmojiTile(emoji: emoji, color: color, size: size, radius: radius);
+    if (photo == null) return fallback;
+    return ClipRRect(
+      borderRadius: BorderRadius.circular(radius),
+      child: Image.asset(
+        'assets/images/dishes/$photo',
+        width: width ?? size,
+        height: size,
+        fit: BoxFit.cover,
+        cacheWidth: ((width ?? size) * 2).round(),
+        errorBuilder: (_, _, _) => fallback,
+      ),
+    );
+  }
+}

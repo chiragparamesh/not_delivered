@@ -77,11 +77,27 @@ class _RestaurantScreenState extends ConsumerState<RestaurantScreen> {
           ],
           flexibleSpace: FlexibleSpaceBar(
             title: Text(r.name, style: const TextStyle(fontFamily: AppTheme.headingFont, fontWeight: FontWeight.w700, color: Colors.white)),
-            background: Container(
-              decoration: BoxDecoration(gradient: LinearGradient(colors: [Color(r.color), Color(r.color).withValues(alpha: 0.6)])),
-              alignment: Alignment.center,
-              child: Text(r.emoji, style: const TextStyle(fontSize: 80)),
-            ),
+            background: Stack(fit: StackFit.expand, children: [
+              r.photo == null
+                  ? Container(
+                      decoration: BoxDecoration(gradient: LinearGradient(colors: [Color(r.color), Color(r.color).withValues(alpha: 0.6)])),
+                      alignment: Alignment.center,
+                      child: Text(r.emoji, style: const TextStyle(fontSize: 80)),
+                    )
+                  : Image.asset('assets/images/dishes/${r.photo}', fit: BoxFit.cover,
+                      errorBuilder: (_, _, _) => Container(color: Color(r.color))),
+              // Darken the bottom so the title stays readable.
+              const DecoratedBox(
+                decoration: BoxDecoration(
+                  gradient: LinearGradient(
+                    begin: Alignment.topCenter,
+                    end: Alignment.bottomCenter,
+                    colors: [Colors.transparent, Colors.black54],
+                    stops: [0.45, 1],
+                  ),
+                ),
+              ),
+            ]),
           ),
         ),
         SliverToBoxAdapter(
@@ -98,7 +114,7 @@ class _RestaurantScreenState extends ConsumerState<RestaurantScreen> {
               ]),
               const SizedBox(height: 6),
               Text('${r.cuisines.join(', ')} · ${r.area}', style: theme.textTheme.bodyMedium),
-              Text('🛵 $eta mins · free delivery on ₹199+', style: theme.textTheme.bodySmall),
+              Text('🛵 ${eta.label} · ${ref.watch(distanceProvider(r)).toStringAsFixed(1)} km away · free delivery on ₹199+', style: theme.textTheme.bodySmall),
               SwitchListTile(
                 contentPadding: EdgeInsets.zero,
                 value: _vegOnly,
@@ -139,7 +155,7 @@ class _RestaurantScreenState extends ConsumerState<RestaurantScreen> {
                   ),
                   const SizedBox(width: 12),
                   Column(children: [
-                    EmojiTile(emoji: d.emoji, color: Color(r.color), size: 72),
+                    FoodImage(photo: d.photo, emoji: d.emoji, color: Color(r.color), size: 88),
                     const SizedBox(height: 6),
                     QtyButton(
                       addKey: ValueKey('add-${d.id}'),

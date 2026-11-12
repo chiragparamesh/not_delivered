@@ -15,6 +15,7 @@ class Restaurant {
     required this.emoji,
     required this.color,
     this.tags = const [],
+    this.photo,
   });
 
   final String id;
@@ -37,6 +38,9 @@ class Restaurant {
   final int color;
   final List<String> tags;
 
+  /// Cover photo file in assets/images/dishes (a bestseller's photo), if any.
+  final String? photo;
+
   bool get isDessertOrBakery => category == 'dessert' || category == 'bakery';
 
   factory Restaurant.fromJson(Map<String, dynamic> j) => Restaurant(
@@ -55,6 +59,7 @@ class Restaurant {
         emoji: j['emoji'] as String,
         color: int.parse('FF${(j['color'] as String).substring(1)}', radix: 16),
         tags: [for (final t in (j['tags'] as List? ?? const [])) t as String],
+        photo: j['photo'] as String?,
       );
 }
 
@@ -69,6 +74,7 @@ class Dish {
     required this.description,
     required this.bestseller,
     required this.emoji,
+    this.photo,
   });
 
   final String id;
@@ -81,6 +87,9 @@ class Dish {
   final bool bestseller;
   final String emoji;
 
+  /// Photo file in assets/images/dishes, if any (credits in assets/data/photo_credits.json).
+  final String? photo;
+
   factory Dish.fromJson(Map<String, dynamic> j) => Dish(
         id: j['id'] as String,
         restaurantId: j['restaurantId'] as String,
@@ -91,6 +100,7 @@ class Dish {
         description: j['description'] as String? ?? '',
         bestseller: j['bestseller'] as bool? ?? false,
         emoji: j['emoji'] as String? ?? '🍽️',
+        photo: j['photo'] as String?,
       );
 }
 
