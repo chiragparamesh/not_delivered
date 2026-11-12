@@ -8,6 +8,7 @@ import '../../../core/theme/app_theme.dart';
 import '../../../core/utils/app_constants.dart';
 import '../../cart/data/cart_controller.dart';
 import '../../catalog/data/catalog_repository.dart';
+import '../../home/presentation/restaurant_card.dart';
 import '../../orders/data/orders_controller.dart';
 import '../../settings/data/settings_controller.dart';
 
@@ -37,8 +38,12 @@ class _CheckoutScreenState extends ConsumerState<CheckoutScreen> {
     await Future<void>.delayed(const Duration(milliseconds: 1200)); // "processing" the demo payment
     if (!mounted) return;
     final s = ref.read(settingsProvider);
+    final restaurant = catalog.restaurant(cart.restaurantId!)!;
+    final eta = ref.read(etaProvider(restaurant));
     final order = ref.read(ordersProvider.notifier).place(
-          restaurant: catalog.restaurant(cart.restaurantId!)!,
+          restaurant: restaurant,
+          etaMins: eta.totalMins,
+          prepMins: eta.prepMins,
           items: [
             for (final e in cart.lines.entries)
               if (catalog.dish(e.key) case final d?) (d, e.value),

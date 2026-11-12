@@ -37,6 +37,8 @@ class Order {
     required this.address,
     required this.riderName,
     required this.easterEgg,
+    this.etaMins = 30,
+    this.prepMins = 15,
     this.deliveredAt,
     this.scratchReward,
   });
@@ -61,7 +63,13 @@ class Order {
 
   /// Rare "Not Delivered… just kidding!" moment for this order.
   final bool easterEgg;
+
+  /// Promised delivery time (minutes after placing) and kitchen time.
+  final int etaMins;
+  final int prepMins;
   final DateTime? deliveredAt;
+
+  DateTime get expectedAt => placedAt.add(Duration(minutes: etaMins));
 
   /// Null = scratch card not scratched yet. 0 = "better luck next time".
   final int? scratchReward;
@@ -90,6 +98,8 @@ class Order {
         address: address,
         riderName: riderName,
         easterEgg: easterEgg,
+        etaMins: etaMins,
+        prepMins: prepMins,
         deliveredAt: deliveredAt ?? this.deliveredAt,
         scratchReward: scratchReward ?? this.scratchReward,
       );
@@ -111,6 +121,8 @@ class Order {
         'address': address,
         'riderName': riderName,
         'easterEgg': easterEgg,
+        'etaMins': etaMins,
+        'prepMins': prepMins,
         'deliveredAt': deliveredAt?.toIso8601String(),
         'scratchReward': scratchReward,
       };
@@ -132,6 +144,8 @@ class Order {
         address: j['address'] as String,
         riderName: j['riderName'] as String,
         easterEgg: j['easterEgg'] as bool,
+        etaMins: j['etaMins'] as int? ?? 30,
+        prepMins: j['prepMins'] as int? ?? 15,
         deliveredAt: j['deliveredAt'] == null ? null : DateTime.parse(j['deliveredAt'] as String),
         scratchReward: j['scratchReward'] as int?,
       );

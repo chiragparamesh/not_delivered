@@ -57,7 +57,7 @@ class OrdersScreen extends ConsumerWidget {
                           Chip(
                             label: Text(o.isDelivered
                                 ? 'Delivered'
-                                : stageLabels[trackingStatus(placedAt: o.placedAt, now: now, easterEgg: false).stage]!),
+                                : stageLabels[trackingStatus(placedAt: o.placedAt, now: now, easterEgg: false, etaMins: o.etaMins, prepMins: o.prepMins).stage]!),
                             backgroundColor: o.isDelivered ? AppColors.veg.withValues(alpha: 0.12) : AppColors.gold.withValues(alpha: 0.3),
                           ),
                         ]),

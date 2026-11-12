@@ -137,6 +137,7 @@ class ProfileScreen extends ConsumerWidget {
               ),
               ListTile(leading: const Icon(Icons.casino_outlined), title: const Text('Daily spin'), onTap: () => context.push(AppRoutes.spin)),
               ListTile(leading: const Icon(Icons.location_on_outlined), title: const Text('Change location'), onTap: () => context.push(AppRoutes.location)),
+              ListTile(leading: const Icon(Icons.photo_library_outlined), title: const Text('Photo credits'), onTap: () => context.push(AppRoutes.credits)),
               ListTile(leading: const Icon(Icons.restart_alt), title: const Text('Reset demo data'), onTap: () => _reset(context, ref)),
             ]),
           ),

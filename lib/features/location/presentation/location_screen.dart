@@ -18,6 +18,7 @@ class LocationScreen extends ConsumerStatefulWidget {
 
 class _LocationScreenState extends ConsumerState<LocationScreen> {
   var _busy = false;
+  var _q = '';
   String? _message;
   late final _address = TextEditingController(text: ref.read(settingsProvider).address);
 
@@ -27,13 +28,17 @@ class _LocationScreenState extends ConsumerState<LocationScreen> {
     super.dispose();
   }
 
-  void _choose(Area a) {
-    ref.read(settingsProvider.notifier).setArea(a.name, address: _address.text.trim());
+  void _done() {
     if (context.canPop()) {
       context.pop();
     } else {
       context.go(AppRoutes.home);
     }
+  }
+
+  void _choose(Area a) {
+    ref.read(settingsProvider.notifier).setArea(a.name, address: _address.text.trim(), lat: a.lat, lon: a.lon);
+    _done();
   }
 
   Future<void> _useGps() async {
@@ -43,16 +48,19 @@ class _LocationScreenState extends ConsumerState<LocationScreen> {
     });
     final pos = await ref.read(locationServiceProvider).currentPosition();
     if (!mounted) return;
-    final area = pos == null ? null : nearestArea(pos.$1, pos.$2);
+    final near = pos == null ? null : nearestArea(pos.$1, pos.$2);
     setState(() {
       _busy = false;
       _message = pos == null
-          ? 'Could not get your location. Pick your area below.'
-          : area == null
+          ? 'Could not get your location. Check that location is on, or pick your area below.'
+          : near == null
               ? 'Looks like you are outside Bengaluru. Pick an area below.'
               : null;
     });
-    if (area != null) _choose(area);
+    if (pos != null && near != null) {
+      ref.read(settingsProvider.notifier).setGps(pos.$1, pos.$2, near.$1.name, address: _address.text.trim());
+      _done();
+    }
   }
 
   @override
@@ -88,7 +96,13 @@ class _LocationScreenState extends ConsumerState<LocationScreen> {
           const SizedBox(height: 16),
           Text('Or choose your area', style: Theme.of(context).textTheme.titleMedium),
           const SizedBox(height: 8),
-          for (final a in areas)
+          TextField(
+            key: const Key('area-search'),
+            decoration: const InputDecoration(prefixIcon: Icon(Icons.search), hintText: 'Search 50 Bengaluru areas'),
+            onChanged: (v) => setState(() => _q = v.trim().toLowerCase()),
+          ),
+          const SizedBox(height: 8),
+          for (final a in areas.where((a) => a.name.toLowerCase().contains(_q)))
             Card(
               child: ListTile(
                 key: ValueKey('area-${a.name}'),

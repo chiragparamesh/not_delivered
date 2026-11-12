@@ -9,6 +9,7 @@ import '../../features/location/presentation/location_screen.dart';
 import '../../features/notifications/presentation/notifications_screen.dart';
 import '../../features/onboarding/presentation/onboarding_screen.dart';
 import '../../features/orders/presentation/orders_screen.dart';
+import '../../features/profile/presentation/photo_credits_screen.dart';
 import '../../features/profile/presentation/profile_screen.dart';
 import '../../features/restaurant/presentation/restaurant_screen.dart';
 import '../../features/rewards/presentation/spin_wheel_screen.dart';
@@ -31,6 +32,7 @@ class AppRoutes {
   static const favorites = '/favorites';
   static const notifications = '/notifications';
   static const spin = '/spin';
+  static const credits = '/credits';
 }
 
 GoRouter createRouter() => GoRouter(
@@ -61,6 +63,7 @@ GoRouter createRouter() => GoRouter(
         GoRoute(path: AppRoutes.favorites, builder: (_, _) => const FavoritesScreen()),
         GoRoute(path: AppRoutes.notifications, builder: (_, _) => const NotificationsScreen()),
         GoRoute(path: AppRoutes.spin, builder: (_, _) => const SpinWheelScreen()),
+        GoRoute(path: AppRoutes.credits, builder: (_, _) => const PhotoCreditsScreen()),
       ],
     );
 

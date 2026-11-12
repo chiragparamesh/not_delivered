@@ -6,7 +6,7 @@ import '../../catalog/domain/models.dart';
 import '../../cart/domain/coupons.dart';
 import '../../notifications/data/notifications_controller.dart';
 import '../../rewards/domain/rewards.dart';
-import '../../tracking/domain/tracking.dart';
+import '../../tracking/domain/tracking.dart' show easterEggChance;
 import '../domain/order.dart';
 
 const riderNames = ['Raju', 'Manjunath', 'Suresh', 'Imran', 'Venkatesh', 'Anil', 'Shivu', 'Prakash'];
@@ -30,6 +30,8 @@ class OrdersController extends Notifier<List<Order>> {
     required Bill bill,
     required String payment,
     required String address,
+    required int etaMins,
+    required int prepMins,
   }) {
     final now = ref.read(clockProvider)();
     final rnd = ref.read(randomProvider);
@@ -52,19 +54,20 @@ class OrdersController extends Notifier<List<Order>> {
       address: address,
       riderName: riderNames[rnd.nextInt(riderNames.length)],
       easterEgg: rnd.nextDouble() < easterEggChance,
+      etaMins: etaMins,
+      prepMins: prepMins,
     );
     _save([order, ...state]);
-    ref.read(notificationsProvider.notifier).push('🧾', 'Order placed', '${restaurant.name} is on it. Total ₹${order.total}.');
+    ref.read(notificationsProvider.notifier).push('🧾', 'Order placed', '${restaurant.name} is on it. Arriving in about $etaMins mins. Total ₹${order.total}.');
     return order;
   }
 
   /// Marks every order whose timer has run out as delivered, and announces new badges.
   void deliverDueOrders() {
     final now = ref.read(clockProvider)();
-    final dueAfter = Duration(seconds: stageStartSec[TrackingStage.delivered]!);
     _deliver({
       for (final o in state)
-        if (!o.isDelivered && now.difference(o.placedAt) >= dueAfter) o.id: o.placedAt.add(dueAfter),
+        if (!o.isDelivered && !now.isBefore(o.expectedAt)) o.id: o.expectedAt,
     });
   }
 

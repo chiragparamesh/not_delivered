@@ -75,7 +75,7 @@ class _SearchScreenState extends ConsumerState<SearchScreen> {
             for (final d in dishes)
               Card(
                 child: ListTile(
-                  leading: Text(d.emoji, style: const TextStyle(fontSize: 28)),
+                  leading: FoodImage(photo: d.photo, emoji: d.emoji, color: const Color(0xFF8B1E3F), size: 48, radius: 10),
                   title: Row(children: [VegMark(isVeg: d.isVeg), const SizedBox(width: 6), Expanded(child: Text(d.name))]),
                   subtitle: Text('₹${d.price} · ${catalog!.restaurant(d.restaurantId)?.name ?? ''}'),
                   trailing: const Icon(Icons.chevron_right),

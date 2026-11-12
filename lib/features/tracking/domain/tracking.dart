@@ -2,15 +2,21 @@
 /// how long ago the order was placed, so it survives app restarts.
 enum TrackingStage { placed, confirmed, preparing, pickedUp, onTheWay, delivered }
 
-/// Seconds after placing when each stage starts (a short demo timeline).
-const stageStartSec = <TrackingStage, int>{
-  TrackingStage.placed: 0,
-  TrackingStage.confirmed: 8,
-  TrackingStage.preparing: 20,
-  TrackingStage.pickedUp: 60,
-  TrackingStage.onTheWay: 75,
-  TrackingStage.delivered: 150,
-};
+/// Stage start times (seconds after placing) for an order with this ETA.
+/// Confirmed after ~1 min, kitchen from 2 min until [prepMins] (+2), rider
+/// picks up, then rides until the ETA. Monotonic for any ETA >= 20 min.
+Map<TrackingStage, int> stageStarts({required int etaMins, required int prepMins}) {
+  final eta = etaMins * 60;
+  final pickup = ((prepMins + 2) * 60).clamp(180, eta - 300);
+  return {
+    TrackingStage.placed: 0,
+    TrackingStage.confirmed: 60,
+    TrackingStage.preparing: 120,
+    TrackingStage.pickedUp: pickup,
+    TrackingStage.onTheWay: pickup + 90,
+    TrackingStage.delivered: eta,
+  };
+}
 
 /// The rare "Not Delivered… just kidding!" moment plays for this long before delivery.
 const easterEggSec = 6;
@@ -51,6 +57,7 @@ class TrackingStatus {
     required this.elapsedSec,
     required this.showEasterEgg,
     required this.message,
+    required this.totalSec,
   });
 
   final TrackingStage stage;
@@ -59,26 +66,30 @@ class TrackingStatus {
   /// True during the "Not Delivered… just kidding!" moment.
   final bool showEasterEgg;
   final String message;
+  final int totalSec;
 
-  int get secondsLeft => (stageStartSec[TrackingStage.delivered]! - elapsedSec).clamp(0, 1 << 30);
-  double get progress => (elapsedSec / stageStartSec[TrackingStage.delivered]!).clamp(0.0, 1.0);
+  int get secondsLeft => (totalSec - elapsedSec).clamp(0, 1 << 30);
+  double get progress => (elapsedSec / totalSec).clamp(0.0, 1.0);
 }
 
 TrackingStatus trackingStatus({
   required DateTime placedAt,
   required DateTime now,
   required bool easterEgg,
+  required int etaMins,
+  required int prepMins,
   DateTime? deliveredAt,
 }) {
+  final starts = stageStarts(etaMins: etaMins, prepMins: prepMins);
   final elapsed = now.difference(placedAt).inSeconds;
   var stage = TrackingStage.placed;
   for (final s in TrackingStage.values) {
-    if (elapsed >= stageStartSec[s]!) stage = s;
+    if (elapsed >= starts[s]!) stage = s;
   }
   if (deliveredAt != null) stage = TrackingStage.delivered;
-  final deliverAt = stageStartSec[TrackingStage.delivered]!;
+  final deliverAt = starts[TrackingStage.delivered]!;
   final egg = easterEgg && deliveredAt == null && elapsed >= deliverAt - easterEggSec && elapsed < deliverAt;
   final msgs = funnyMessages[stage]!;
-  final message = egg ? 'Not Delivered… 😱' : msgs[(elapsed ~/ 8).abs() % msgs.length];
-  return TrackingStatus(stage: stage, elapsedSec: elapsed, showEasterEgg: egg, message: message);
+  final message = egg ? 'Not Delivered… 😱' : msgs[(elapsed ~/ 20).abs() % msgs.length];
+  return TrackingStatus(stage: stage, elapsedSec: elapsed, showEasterEgg: egg, message: message, totalSec: deliverAt);
 }

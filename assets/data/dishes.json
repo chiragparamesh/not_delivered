@@ -10,7 +10,8 @@
    "price": 100,
    "description": "Crispy dosa, potato palya, chutney, sambar",
    "bestseller": true,
-   "emoji": "🥞"
+   "emoji": "🥞",
+   "photo": "masala_dosa.jpg"
   },
   {
    "id": "namma_dosa_mane__benne_dosa",
@@ -21,7 +22,8 @@
    "price": 105,
    "description": "Davangere-style butter dosa",
    "bestseller": true,
-   "emoji": "🥞"
+   "emoji": "🥞",
+   "photo": "benne_dosa_davangere.jpg"
   },
   {
    "id": "namma_dosa_mane__set_dosa",
@@ -32,7 +34,8 @@
    "price": 80,
    "description": "Three soft dosas with sagu",
    "bestseller": false,
-   "emoji": "🥞"
+   "emoji": "🥞",
+   "photo": "set_dosa.jpg"
   },
   {
    "id": "namma_dosa_mane__idli_vada",
@@ -43,7 +46,8 @@
    "price": 75,
    "description": "2 idlis, 1 vada, chutney, sambar",
    "bestseller": true,
-   "emoji": "🍘"
+   "emoji": "🍘",
+   "photo": "idli_vada_sambar.jpg"
   },
   {
    "id": "namma_dosa_mane__thatte_idli",
@@ -54,7 +58,8 @@
    "price": 55,
    "description": "Plate-sized idli with ghee",
    "bestseller": false,
-   "emoji": "🍘"
+   "emoji": "🍘",
+   "photo": "thatte_idli.jpg"
   },
   {
    "id": "namma_dosa_mane__bisi_bele_bath",
@@ -65,7 +70,8 @@
    "price": 110,
    "description": "With boondi and papad",
    "bestseller": false,
-   "emoji": "🍚"
+   "emoji": "🍚",
+   "photo": "bisi_bele_bath.jpg"
   },
   {
    "id": "namma_dosa_mane__curd_rice",
@@ -76,7 +82,8 @@
    "price": 80,
    "description": "Tempered with mustard and curry leaves",
    "bestseller": false,
-   "emoji": "🍚"
+   "emoji": "🍚",
+   "photo": "curd_rice.jpg"
   },
   {
    "id": "namma_dosa_mane__filter_coffee",
@@ -87,7 +94,8 @@
    "price": 40,
    "description": "Strong, frothy, steel tumbler",
    "bestseller": true,
-   "emoji": "🥤"
+   "emoji": "🥤",
+   "photo": "south_indian_filter_coffee.jpg"
   },
   {
    "id": "namma_dosa_mane__kesari_bath",
@@ -98,7 +106,8 @@
    "price": 55,
    "description": "Semolina, ghee, saffron",
    "bestseller": false,
-   "emoji": "🍬"
+   "emoji": "🍬",
+   "photo": "kesari_bath.jpg"
   },
   {
    "id": "udupi_tiffin_corner__masala_dosa",
@@ -109,7 +118,8 @@
    "price": 85,
    "description": "Crispy dosa, potato palya, chutney, sambar",
    "bestseller": true,
-   "emoji": "🥞"
+   "emoji": "🥞",
+   "photo": "masala_dosa.jpg"
   },
   {
    "id": "udupi_tiffin_corner__benne_dosa",
@@ -120,7 +130,8 @@
    "price": 120,
    "description": "Davangere-style butter dosa",
    "bestseller": true,
-   "emoji": "🥞"
+   "emoji": "🥞",
+   "photo": "benne_dosa_davangere.jpg"
   },
   {
    "id": "udupi_tiffin_corner__set_dosa",
@@ -131,7 +142,8 @@
    "price": 75,
    "description": "Three soft dosas with sagu",
    "bestseller": false,
-   "emoji": "🥞"
+   "emoji": "🥞",
+   "photo": "set_dosa.jpg"
   },
   {
    "id": "udupi_tiffin_corner__idli_vada",
@@ -142,7 +154,8 @@
    "price": 70,
    "description": "2 idlis, 1 vada, chutney, sambar",
    "bestseller": true,
-   "emoji": "🍘"
+   "emoji": "🍘",
+   "photo": "idli_vada_sambar.jpg"
   },
   {
    "id": "udupi_tiffin_corner__thatte_idli",
@@ -153,7 +166,8 @@
    "price": 65,
    "description": "Plate-sized idli with ghee",
    "bestseller": false,
-   "emoji": "🍘"
+   "emoji": "🍘",
+   "photo": "thatte_idli.jpg"
   },
   {
    "id": "udupi_tiffin_corner__bisi_bele_bath",
@@ -164,7 +178,8 @@
    "price": 95,
    "description": "With boondi and papad",
    "bestseller": false,
-   "emoji": "🍚"
+   "emoji": "🍚",
+   "photo": "bisi_bele_bath.jpg"
   },
   {
    "id": "udupi_tiffin_corner__curd_rice",
@@ -175,7 +190,8 @@
    "price": 90,
    "description": "Tempered with mustard and curry leaves",
    "bestseller": false,
-   "emoji": "🍚"
+   "emoji": "🍚",
+   "photo": "curd_rice.jpg"
   },
   {
    "id": "udupi_tiffin_corner__filter_coffee",
@@ -186,7 +202,8 @@
    "price": 45,
    "description": "Strong, frothy, steel tumbler",
    "bestseller": true,
-   "emoji": "🥤"
+   "emoji": "🥤",
+   "photo": "south_indian_filter_coffee.jpg"
   },
   {
    "id": "udupi_tiffin_corner__kesari_bath",
@@ -197,7 +214,8 @@
    "price": 65,
    "description": "Semolina, ghee, saffron",
    "bestseller": false,
-   "emoji": "🍬"
+   "emoji": "🍬",
+   "photo": "kesari_bath.jpg"
   },
   {
    "id": "silk_board_biryani_co__chicken_dum_biryani",
@@ -208,7 +226,8 @@
    "price": 320,
    "description": "Slow-cooked basmati, raita, salan",
    "bestseller": true,
-   "emoji": "🍛"
+   "emoji": "🍛",
+   "photo": "hyderabadi_chicken_biryani.jpg"
   },
   {
    "id": "silk_board_biryani_co__mutton_biryani",
@@ -219,7 +238,8 @@
    "price": 440,
    "description": "Tender mutton, dum style",
    "bestseller": true,
-   "emoji": "🍛"
+   "emoji": "🍛",
+   "photo": "mutton_biryani.jpg"
   },
   {
    "id": "silk_board_biryani_co__egg_biryani",
@@ -230,7 +250,8 @@
    "price": 240,
    "description": "Two masala eggs",
    "bestseller": false,
-   "emoji": "🍛"
+   "emoji": "🍛",
+   "photo": "egg_biryani.jpg"
   },
   {
    "id": "silk_board_biryani_co__veg_biryani",
@@ -241,7 +262,8 @@
    "price": 240,
    "description": "Seasonal vegetables, saffron rice",
    "bestseller": false,
-   "emoji": "🍛"
+   "emoji": "🍛",
+   "photo": "vegetable_biryani.jpg"
   },
   {
    "id": "silk_board_biryani_co__chicken_65",
@@ -252,7 +274,8 @@
    "price": 245,
    "description": "Crispy, spicy, curry leaves",
    "bestseller": true,
-   "emoji": "🍢"
+   "emoji": "🍢",
+   "photo": "chicken_65.jpg"
   },
   {
    "id": "silk_board_biryani_co__paneer_65",
@@ -263,7 +286,8 @@
    "price": 255,
    "description": "Crispy paneer bites",
    "bestseller": false,
-   "emoji": "🍢"
+   "emoji": "🍢",
+   "photo": "paneer_65.jpg"
   },
   {
    "id": "silk_board_biryani_co__mirchi_ka_salan",
@@ -274,7 +298,8 @@
    "price": 80,
    "description": "Hyderabadi chilli curry",
    "bestseller": false,
-   "emoji": "🍟"
+   "emoji": "🍟",
+   "photo": "mirchi_ka_salan.jpg"
   },
   {
    "id": "silk_board_biryani_co__double_ka_meetha",
@@ -285,7 +310,8 @@
    "price": 120,
    "description": "Bread pudding with dry fruits",
    "bestseller": false,
-   "emoji": "🍰"
+   "emoji": "🍰",
+   "photo": "double_ka_meetha.jpg"
   },
   {
    "id": "donne_biryani_darshini__chicken_donne_biryani",
@@ -296,7 +322,8 @@
    "price": 260,
    "description": "Seeraga samba rice, green masala, in a leaf cup",
    "bestseller": true,
-   "emoji": "🍛"
+   "emoji": "🍛",
+   "photo": "donne_biryani.jpg"
   },
   {
    "id": "donne_biryani_darshini__mutton_donne_biryani",
@@ -307,7 +334,8 @@
    "price": 340,
    "description": "Bengaluru military-hotel style",
    "bestseller": true,
-   "emoji": "🍛"
+   "emoji": "🍛",
+   "photo": "donne_biryani.jpg"
   },
   {
    "id": "donne_biryani_darshini__veg_donne_biryani",
@@ -318,7 +346,8 @@
    "price": 180,
    "description": "Green masala vegetables",
    "bestseller": false,
-   "emoji": "🍛"
+   "emoji": "🍛",
+   "photo": "donne_biryani.jpg"
   },
   {
    "id": "donne_biryani_darshini__chicken_kebab",
@@ -329,7 +358,8 @@
    "price": 240,
    "description": "Deep-fried, red masala",
    "bestseller": true,
-   "emoji": "🍢"
+   "emoji": "🍢",
+   "photo": "chicken_kebab_india.jpg"
   },
   {
    "id": "donne_biryani_darshini__pepper_chicken",
@@ -340,7 +370,8 @@
    "price": 240,
    "description": "Dry, black pepper",
    "bestseller": false,
-   "emoji": "🍢"
+   "emoji": "🍢",
+   "photo": "pepper_chicken.jpg"
   },
   {
    "id": "donne_biryani_darshini__raita",
@@ -351,7 +382,8 @@
    "price": 45,
    "description": "",
    "bestseller": false,
-   "emoji": "🍟"
+   "emoji": "🍟",
+   "photo": "raita.jpg"
   },
   {
    "id": "donne_biryani_darshini__boiled_egg",
@@ -362,7 +394,8 @@
    "price": 20,
    "description": "",
    "bestseller": false,
-   "emoji": "🍟"
+   "emoji": "🍟",
+   "photo": "boiled_eggs.jpg"
   },
   {
    "id": "donne_biryani_darshini__gulab_jamun_2",
@@ -373,7 +406,8 @@
    "price": 65,
    "description": "",
    "bestseller": false,
-   "emoji": "🍰"
+   "emoji": "🍰",
+   "photo": "gulab_jamun.jpg"
   },
   {
    "id": "traffic_jam_tandoor__paneer_tikka",
@@ -384,7 +418,8 @@
    "price": 295,
    "description": "Tandoor-grilled cottage cheese",
    "bestseller": true,
-   "emoji": "🍢"
+   "emoji": "🍢",
+   "photo": "paneer_tikka.jpg"
   },
   {
    "id": "traffic_jam_tandoor__tandoori_chicken_half",
@@ -395,7 +430,8 @@
    "price": 350,
    "description": "Smoky, charred, mint chutney",
    "bestseller": true,
-   "emoji": "🍢"
+   "emoji": "🍢",
+   "photo": "tandoori_chicken.jpg"
   },
   {
    "id": "traffic_jam_tandoor__butter_chicken",
@@ -406,7 +442,8 @@
    "price": 355,
    "description": "Creamy tomato gravy",
    "bestseller": true,
-   "emoji": "🍲"
+   "emoji": "🍲",
+   "photo": "butter_chicken.jpg"
   },
   {
    "id": "traffic_jam_tandoor__dal_makhani",
@@ -417,7 +454,8 @@
    "price": 240,
    "description": "Slow-cooked black lentils",
    "bestseller": true,
-   "emoji": "🍲"
+   "emoji": "🍲",
+   "photo": "dal_makhani.jpg"
   },
   {
    "id": "traffic_jam_tandoor__kadai_paneer",
@@ -428,7 +466,8 @@
    "price": 270,
    "description": "Peppers, onions, kadai masala",
    "bestseller": false,
-   "emoji": "🍲"
+   "emoji": "🍲",
+   "photo": "kadai_paneer.jpg"
   },
   {
    "id": "traffic_jam_tandoor__butter_naan",
@@ -439,7 +478,8 @@
    "price": 60,
    "description": "",
    "bestseller": false,
-   "emoji": "🫓"
+   "emoji": "🫓",
+   "photo": "naan.jpg"
   },
   {
    "id": "traffic_jam_tandoor__garlic_naan",
@@ -450,7 +490,8 @@
    "price": 70,
    "description": "",
    "bestseller": false,
-   "emoji": "🫓"
+   "emoji": "🫓",
+   "photo": "garlic_naan.jpg"
   },
   {
    "id": "traffic_jam_tandoor__jeera_rice",
@@ -461,7 +502,8 @@
    "price": 150,
    "description": "",
    "bestseller": false,
-   "emoji": "🍚"
+   "emoji": "🍚",
+   "photo": "jeera_rice.jpg"
   },
   {
    "id": "traffic_jam_tandoor__gajar_halwa",
@@ -472,7 +514,8 @@
    "price": 115,
    "description": "Winter special",
    "bestseller": false,
-   "emoji": "🍰"
+   "emoji": "🍰",
+   "photo": "gajar_halwa.jpg"
   },
   {
    "id": "thali_theory__mini_thali",
@@ -483,7 +526,8 @@
    "price": 190,
    "description": "2 sabzi, dal, rice, 2 rotis, sweet",
    "bestseller": true,
-   "emoji": "🍱"
+   "emoji": "🍱",
+   "photo": "indian_thali.jpg"
   },
   {
    "id": "thali_theory__royal_thali",
@@ -494,7 +538,8 @@
    "price": 320,
    "description": "4 sabzi, dal, rice, 3 rotis, raita, 2 sweets",
    "bestseller": true,
-   "emoji": "🍱"
+   "emoji": "🍱",
+   "photo": "indian_thali.jpg"
   },
   {
    "id": "thali_theory__gujarati_thali",
@@ -505,7 +550,8 @@
    "price": 320,
    "description": "Farsan, kadhi, rotli, dal-bhaat",
    "bestseller": false,
-   "emoji": "🍱"
+   "emoji": "🍱",
+   "photo": "gujarati_thali.jpg"
   },
   {
    "id": "thali_theory__rajma_chawal",
@@ -516,7 +562,8 @@
    "price": 160,
    "description": "",
    "bestseller": false,
-   "emoji": "🍲"
+   "emoji": "🍲",
+   "photo": "rajma_chawal.jpg"
   },
   {
    "id": "thali_theory__chole_bhature",
@@ -527,7 +574,8 @@
    "price": 150,
    "description": "",
    "bestseller": true,
-   "emoji": "🍲"
+   "emoji": "🍲",
+   "photo": "chole_bhature.jpg"
   },
   {
    "id": "thali_theory__tawa_roti",
@@ -538,7 +586,8 @@
    "price": 30,
    "description": "",
    "bestseller": false,
-   "emoji": "🫓"
+   "emoji": "🫓",
+   "photo": "chapati.jpg"
   },
   {
    "id": "thali_theory__shrikhand",
@@ -549,7 +598,8 @@
    "price": 85,
    "description": "",
    "bestseller": false,
-   "emoji": "🍰"
+   "emoji": "🍰",
+   "photo": "shrikhand.jpg"
   },
   {
    "id": "thali_theory__masala_chaas",
@@ -560,7 +610,8 @@
    "price": 50,
    "description": "",
    "bestseller": false,
-   "emoji": "🥤"
+   "emoji": "🥤",
+   "photo": "buttermilk_glass_india.jpg"
   },
   {
    "id": "code_curry__paneer_tikka",
@@ -571,7 +622,8 @@
    "price": 265,
    "description": "Tandoor-grilled cottage cheese",
    "bestseller": true,
-   "emoji": "🍢"
+   "emoji": "🍢",
+   "photo": "paneer_tikka.jpg"
   },
   {
    "id": "code_curry__tandoori_chicken_half",
@@ -582,7 +634,8 @@
    "price": 350,
    "description": "Smoky, charred, mint chutney",
    "bestseller": true,
-   "emoji": "🍢"
+   "emoji": "🍢",
+   "photo": "tandoori_chicken.jpg"
   },
   {
    "id": "code_curry__butter_chicken",
@@ -593,7 +646,8 @@
    "price": 375,
    "description": "Creamy tomato gravy",
    "bestseller": true,
-   "emoji": "🍲"
+   "emoji": "🍲",
+   "photo": "butter_chicken.jpg"
   },
   {
    "id": "code_curry__dal_makhani",
@@ -604,7 +658,8 @@
    "price": 240,
    "description": "Slow-cooked black lentils",
    "bestseller": true,
-   "emoji": "🍲"
+   "emoji": "🍲",
+   "photo": "dal_makhani.jpg"
   },
   {
    "id": "code_curry__kadai_paneer",
@@ -615,7 +670,8 @@
    "price": 270,
    "description": "Peppers, onions, kadai masala",
    "bestseller": false,
-   "emoji": "🍲"
+   "emoji": "🍲",
+   "photo": "kadai_paneer.jpg"
   },
   {
    "id": "code_curry__butter_naan",
@@ -626,7 +682,8 @@
    "price": 60,
    "description": "",
    "bestseller": false,
-   "emoji": "🫓"
+   "emoji": "🫓",
+   "photo": "naan.jpg"
   },
   {
    "id": "code_curry__garlic_naan",
@@ -637,7 +694,8 @@
    "price": 75,
    "description": "",
    "bestseller": false,
-   "emoji": "🫓"
+   "emoji": "🫓",
+   "photo": "garlic_naan.jpg"
   },
   {
    "id": "code_curry__jeera_rice",
@@ -648,7 +706,8 @@
    "price": 160,
    "description": "",
    "bestseller": false,
-   "emoji": "🍚"
+   "emoji": "🍚",
+   "photo": "jeera_rice.jpg"
   },
   {
    "id": "code_curry__gajar_halwa",
@@ -659,7 +718,8 @@
    "price": 130,
    "description": "Winter special",
    "bestseller": false,
-   "emoji": "🍰"
+   "emoji": "🍰",
+   "photo": "gajar_halwa.jpg"
   },
   {
    "id": "byte_bite_burgers__classic_chicken_burger",
@@ -670,7 +730,8 @@
    "price": 210,
    "description": "Crispy fillet, lettuce, mayo",
    "bestseller": true,
-   "emoji": "🍔"
+   "emoji": "🍔",
+   "photo": "chicken_burger.jpg"
   },
   {
    "id": "byte_bite_burgers__double_smash_burger",
@@ -681,7 +742,8 @@
    "price": 285,
    "description": "Two patties, cheese, pickles",
    "bestseller": true,
-   "emoji": "🍔"
+   "emoji": "🍔",
+   "photo": "smash_burger.jpg"
   },
   {
    "id": "byte_bite_burgers__aloo_tikki_burger",
@@ -692,7 +754,8 @@
    "price": 125,
    "description": "",
    "bestseller": false,
-   "emoji": "🍔"
+   "emoji": "🍔",
+   "photo": "aloo_tikki_burger.jpg"
   },
   {
    "id": "byte_bite_burgers__paneer_crunch_burger",
@@ -703,7 +766,8 @@
    "price": 180,
    "description": "",
    "bestseller": false,
-   "emoji": "🍔"
+   "emoji": "🍔",
+   "photo": "veggie_burger.jpg"
   },
   {
    "id": "byte_bite_burgers__peri_peri_fries",
@@ -714,7 +778,8 @@
    "price": 130,
    "description": "",
    "bestseller": true,
-   "emoji": "🍟"
+   "emoji": "🍟",
+   "photo": "french_fries.jpg"
   },
   {
    "id": "byte_bite_burgers__chicken_wings_6",
@@ -725,7 +790,8 @@
    "price": 240,
    "description": "",
    "bestseller": false,
-   "emoji": "🍟"
+   "emoji": "🍟",
+   "photo": "chicken_wings.jpg"
   },
   {
    "id": "byte_bite_burgers__cold_coffee",
@@ -736,7 +802,8 @@
    "price": 130,
    "description": "",
    "bestseller": false,
-   "emoji": "🥤"
+   "emoji": "🥤",
+   "photo": "iced_coffee_glass.jpg"
   },
   {
    "id": "byte_bite_burgers__brownie_sundae",
@@ -747,7 +814,8 @@
    "price": 155,
    "description": "",
    "bestseller": false,
-   "emoji": "🍰"
+   "emoji": "🍰",
+   "photo": "brownie_sundae.jpg"
   },
   {
    "id": "forno_80_ft__margherita",
@@ -758,7 +826,8 @@
    "price": 300,
    "description": "San Marzano tomato, fior di latte",
    "bestseller": true,
-   "emoji": "🍕"
+   "emoji": "🍕",
+   "photo": "margherita_pizza.jpg"
   },
   {
    "id": "forno_80_ft__farmhouse",
@@ -769,7 +838,8 @@
    "price": 385,
    "description": "Peppers, onion, mushroom, corn",
    "bestseller": false,
-   "emoji": "🍕"
+   "emoji": "🍕",
+   "photo": "vegetable_pizza.jpg"
   },
   {
    "id": "forno_80_ft__pepperoni",
@@ -780,7 +850,8 @@
    "price": 425,
    "description": "Spicy pepperoni, mozzarella",
    "bestseller": true,
-   "emoji": "🍕"
+   "emoji": "🍕",
+   "photo": "pepperoni_pizza.jpg"
   },
   {
    "id": "forno_80_ft__tandoori_chicken_pizza",
@@ -791,7 +862,8 @@
    "price": 450,
    "description": "",
    "bestseller": false,
-   "emoji": "🍕"
+   "emoji": "🍕",
+   "photo": "chicken_pizza.jpg"
   },
   {
    "id": "forno_80_ft__paneer_makhani_pizza",
@@ -802,7 +874,8 @@
    "price": 380,
    "description": "",
    "bestseller": false,
-   "emoji": "🍕"
+   "emoji": "🍕",
+   "photo": "paneer_pizza.jpg"
   },
   {
    "id": "forno_80_ft__garlic_bread",
@@ -813,7 +886,8 @@
    "price": 150,
    "description": "",
    "bestseller": true,
-   "emoji": "🍟"
+   "emoji": "🍟",
+   "photo": "garlic_bread.jpg"
   },
   {
    "id": "forno_80_ft__cheesy_dip",
@@ -824,7 +898,8 @@
    "price": 50,
    "description": "",
    "bestseller": false,
-   "emoji": "🍟"
+   "emoji": "🍟",
+   "photo": "cheese_sauce_dip.jpg"
   },
   {
    "id": "forno_80_ft__tiramisu",
@@ -835,7 +910,8 @@
    "price": 230,
    "description": "",
    "bestseller": false,
-   "emoji": "🍰"
+   "emoji": "🍰",
+   "photo": "tiramisu.jpg"
   },
   {
    "id": "pasta_la_vista__penne_arrabbiata",
@@ -846,7 +922,8 @@
    "price": 315,
    "description": "Spicy tomato, basil",
    "bestseller": true,
-   "emoji": "🍝"
+   "emoji": "🍝",
+   "photo": "penne_arrabbiata.jpg"
   },
   {
    "id": "pasta_la_vista__alfredo_chicken",
@@ -857,7 +934,8 @@
    "price": 400,
    "description": "Creamy parmesan sauce",
    "bestseller": true,
-   "emoji": "🍝"
+   "emoji": "🍝",
+   "photo": "fettuccine_alfredo.jpg"
   },
   {
    "id": "pasta_la_vista__pesto_spaghetti",
@@ -868,7 +946,8 @@
    "price": 365,
    "description": "",
    "bestseller": false,
-   "emoji": "🍝"
+   "emoji": "🍝",
+   "photo": "pesto_spaghetti.jpg"
   },
   {
    "id": "pasta_la_vista__quattro_formaggi",
@@ -879,7 +958,8 @@
    "price": 470,
    "description": "Four cheeses",
    "bestseller": false,
-   "emoji": "🍕"
+   "emoji": "🍕",
+   "photo": "quattro_formaggi_pizza.jpg"
   },
   {
    "id": "pasta_la_vista__bbq_chicken_pizza",
@@ -890,7 +970,8 @@
    "price": 515,
    "description": "",
    "bestseller": false,
-   "emoji": "🍕"
+   "emoji": "🍕",
+   "photo": "bbq_chicken_pizza.jpg"
   },
   {
    "id": "pasta_la_vista__bruschetta",
@@ -901,7 +982,8 @@
    "price": 230,
    "description": "",
    "bestseller": false,
-   "emoji": "🍢"
+   "emoji": "🍢",
+   "photo": "bruschetta.jpg"
   },
   {
    "id": "pasta_la_vista__panna_cotta",
@@ -912,7 +994,8 @@
    "price": 220,
    "description": "",
    "bestseller": false,
-   "emoji": "🍰"
+   "emoji": "🍰",
+   "photo": "panna_cotta.jpg"
   },
   {
    "id": "pasta_la_vista__lemon_iced_tea",
@@ -923,7 +1006,8 @@
    "price": 155,
    "description": "",
    "bestseller": false,
-   "emoji": "🥤"
+   "emoji": "🥤",
+   "photo": "iced_tea_lemon.jpg"
   },
   {
    "id": "wok_on_church__chilli_chicken",
@@ -934,7 +1018,8 @@
    "price": 295,
    "description": "Dry, Indo-Chinese",
    "bestseller": true,
-   "emoji": "🍢"
+   "emoji": "🍢",
+   "photo": "chilli_chicken.jpg"
   },
   {
    "id": "wok_on_church__gobi_manchurian",
@@ -945,7 +1030,8 @@
    "price": 210,
    "description": "",
    "bestseller": true,
-   "emoji": "🍢"
+   "emoji": "🍢",
+   "photo": "gobi_manchurian.jpg"
   },
   {
    "id": "wok_on_church__crispy_corn",
@@ -956,7 +1042,8 @@
    "price": 200,
    "description": "",
    "bestseller": false,
-   "emoji": "🍢"
+   "emoji": "🍢",
+   "photo": "crispy_corn.jpg"
   },
   {
    "id": "wok_on_church__hakka_noodles_veg",
@@ -967,7 +1054,8 @@
    "price": 180,
    "description": "",
    "bestseller": false,
-   "emoji": "🍜"
+   "emoji": "🍜",
+   "photo": "hakka_noodles.jpg"
   },
   {
    "id": "wok_on_church__schezwan_chicken_noodles",
@@ -978,7 +1066,8 @@
    "price": 240,
    "description": "",
    "bestseller": true,
-   "emoji": "🍜"
+   "emoji": "🍜",
+   "photo": "schezwan_noodles.jpg"
   },
   {
    "id": "wok_on_church__egg_fried_rice",
@@ -989,7 +1078,8 @@
    "price": 200,
    "description": "",
    "bestseller": false,
-   "emoji": "🍚"
+   "emoji": "🍚",
+   "photo": "egg_fried_rice.jpg"
   },
   {
    "id": "wok_on_church__veg_fried_rice",
@@ -1000,7 +1090,8 @@
    "price": 180,
    "description": "",
    "bestseller": false,
-   "emoji": "🍚"
+   "emoji": "🍚",
+   "photo": "vegetable_fried_rice.jpg"
   },
   {
    "id": "wok_on_church__manchow_soup",
@@ -1011,7 +1102,8 @@
    "price": 140,
    "description": "",
    "bestseller": false,
-   "emoji": "🥣"
+   "emoji": "🥣",
+   "photo": "manchow_soup.jpg"
   },
   {
    "id": "momo_mandi__chicken_steamed_momos_8",
@@ -1022,7 +1114,8 @@
    "price": 140,
    "description": "With spicy red chutney",
    "bestseller": true,
-   "emoji": "🥟"
+   "emoji": "🥟",
+   "photo": "momo_dumplings.jpg"
   },
   {
    "id": "momo_mandi__veg_steamed_momos_8",
@@ -1033,7 +1126,8 @@
    "price": 120,
    "description": "",
    "bestseller": false,
-   "emoji": "🥟"
+   "emoji": "🥟",
+   "photo": "momo_dumplings.jpg"
   },
   {
    "id": "momo_mandi__paneer_fried_momos_8",
@@ -1044,7 +1138,8 @@
    "price": 165,
    "description": "",
    "bestseller": false,
-   "emoji": "🥟"
+   "emoji": "🥟",
+   "photo": "fried_momos.jpg"
   },
   {
    "id": "momo_mandi__chicken_tandoori_momos_8",
@@ -1055,7 +1150,8 @@
    "price": 210,
    "description": "",
    "bestseller": true,
-   "emoji": "🥟"
+   "emoji": "🥟",
+   "photo": "tandoori_momos.jpg"
   },
   {
    "id": "momo_mandi__chicken_thukpa",
@@ -1066,7 +1162,8 @@
    "price": 200,
    "description": "Tibetan noodle soup",
    "bestseller": false,
-   "emoji": "🍜"
+   "emoji": "🍜",
+   "photo": "thukpa.jpg"
   },
   {
    "id": "momo_mandi__veg_thukpa",
@@ -1077,7 +1174,8 @@
    "price": 185,
    "description": "",
    "bestseller": false,
-   "emoji": "🍜"
+   "emoji": "🍜",
+   "photo": "thukpa.jpg"
   },
   {
    "id": "momo_mandi__chilli_garlic_fries",
@@ -1088,7 +1186,8 @@
    "price": 130,
    "description": "",
    "bestseller": false,
-   "emoji": "🍟"
+   "emoji": "🍟",
+   "photo": "french_fries.jpg"
   },
   {
    "id": "gundu_pulao_point__gongura_chicken_biryani",
@@ -1099,7 +1198,8 @@
    "price": 315,
    "description": "Tangy sorrel leaves, fiery",
    "bestseller": true,
-   "emoji": "🍛"
+   "emoji": "🍛",
+   "photo": "chicken_biryani_plate.jpg"
   },
   {
    "id": "gundu_pulao_point__chicken_pulao",
@@ -1110,7 +1210,8 @@
    "price": 295,
    "description": "",
    "bestseller": true,
-   "emoji": "🍛"
+   "emoji": "🍛",
+   "photo": "chicken_pulao.jpg"
   },
   {
    "id": "gundu_pulao_point__andhra_veg_meals",
@@ -1121,7 +1222,8 @@
    "price": 240,
    "description": "Unlimited rice, pappu, rasam, pickle",
    "bestseller": true,
-   "emoji": "🍛"
+   "emoji": "🍛",
+   "photo": "andhra_meals_banana_leaf.jpg"
   },
   {
    "id": "gundu_pulao_point__chilli_chicken_andhra",
@@ -1132,7 +1234,8 @@
    "price": 285,
    "description": "",
    "bestseller": false,
-   "emoji": "🍢"
+   "emoji": "🍢",
+   "photo": "chilli_chicken.jpg"
   },
   {
    "id": "gundu_pulao_point__apollo_fish",
@@ -1143,7 +1246,8 @@
    "price": 335,
    "description": "",
    "bestseller": false,
-   "emoji": "🍢"
+   "emoji": "🍢",
+   "photo": "apollo_fish.jpg"
   },
   {
    "id": "gundu_pulao_point__gongura_mutton",
@@ -1154,7 +1258,8 @@
    "price": 400,
    "description": "",
    "bestseller": false,
-   "emoji": "🍲"
+   "emoji": "🍲",
+   "photo": "mutton_curry.jpg"
   },
   {
    "id": "gundu_pulao_point__gunpowder_podi_rice",
@@ -1165,7 +1270,8 @@
    "price": 145,
    "description": "",
    "bestseller": false,
-   "emoji": "🍟"
+   "emoji": "🍟",
+   "photo": "podi_rice.jpg"
   },
   {
    "id": "gundu_pulao_point__double_ka_meetha",
@@ -1176,7 +1282,8 @@
    "price": 95,
    "description": "",
    "bestseller": false,
-   "emoji": "🍰"
+   "emoji": "🍰",
+   "photo": "double_ka_meetha.jpg"
   },
   {
    "id": "coastal_kadala__fish_thali",
@@ -1187,7 +1294,8 @@
    "price": 400,
    "description": "Fish curry, fry, rice, sides",
    "bestseller": true,
-   "emoji": "🦐"
+   "emoji": "🦐",
+   "photo": "fish_thali.jpg"
   },
   {
    "id": "coastal_kadala__prawn_ghee_roast",
@@ -1198,7 +1306,8 @@
    "price": 450,
    "description": "Mangalorean classic",
    "bestseller": true,
-   "emoji": "🦐"
+   "emoji": "🦐",
+   "photo": "prawn_ghee_roast.jpg"
   },
   {
    "id": "coastal_kadala__neer_dosa_fish_curry",
@@ -1209,7 +1318,8 @@
    "price": 305,
    "description": "",
    "bestseller": true,
-   "emoji": "🦐"
+   "emoji": "🦐",
+   "photo": "neer_dosa.jpg"
   },
   {
    "id": "coastal_kadala__kerala_fish_fry",
@@ -1220,7 +1330,8 @@
    "price": 350,
    "description": "",
    "bestseller": false,
-   "emoji": "🦐"
+   "emoji": "🦐",
+   "photo": "kerala_fish_fry.jpg"
   },
   {
    "id": "coastal_kadala__appam_veg_stew",
@@ -1231,7 +1342,8 @@
    "price": 265,
    "description": "",
    "bestseller": false,
-   "emoji": "🥘"
+   "emoji": "🥘",
+   "photo": "appam_stew.jpg"
   },
   {
    "id": "coastal_kadala__kadala_curry_puttu",
@@ -1242,7 +1354,8 @@
    "price": 200,
    "description": "",
    "bestseller": false,
-   "emoji": "🥘"
+   "emoji": "🥘",
+   "photo": "puttu_kadala.jpg"
   },
   {
    "id": "coastal_kadala__malabar_parotta",
@@ -1253,7 +1366,8 @@
    "price": 50,
    "description": "",
    "bestseller": false,
-   "emoji": "🫓"
+   "emoji": "🫓",
+   "photo": "kerala_parotta.jpg"
   },
   {
    "id": "coastal_kadala__elaneer_payasam",
@@ -1264,7 +1378,8 @@
    "price": 135,
    "description": "Tender coconut",
    "bestseller": false,
-   "emoji": "🍰"
+   "emoji": "🍰",
+   "photo": "payasam.jpg"
   },
   {
    "id": "ragi_mudde_mane__ragi_mudde_naati_koli_saaru",
@@ -1275,7 +1390,8 @@
    "price": 245,
    "description": "Country chicken curry",
    "bestseller": true,
-   "emoji": "🍛"
+   "emoji": "🍛",
+   "photo": "ragi_mudde.jpg"
   },
   {
    "id": "ragi_mudde_mane__ragi_mudde_bassaru",
@@ -1286,7 +1402,8 @@
    "price": 150,
    "description": "",
    "bestseller": true,
-   "emoji": "🍛"
+   "emoji": "🍛",
+   "photo": "ragi_mudde.jpg"
   },
   {
    "id": "ragi_mudde_mane__jolada_rotti_oota",
@@ -1297,7 +1414,8 @@
    "price": 190,
    "description": "North Karnataka meal",
    "bestseller": false,
-   "emoji": "🍛"
+   "emoji": "🍛",
+   "photo": "jolada_rotti.jpg"
   },
   {
    "id": "ragi_mudde_mane__chicken_sukka",
@@ -1308,7 +1426,8 @@
    "price": 265,
    "description": "",
    "bestseller": false,
-   "emoji": "🍢"
+   "emoji": "🍢",
+   "photo": "chicken_sukka.jpg"
   },
   {
    "id": "ragi_mudde_mane__vangi_bath",
@@ -1319,7 +1438,8 @@
    "price": 115,
    "description": "",
    "bestseller": false,
-   "emoji": "🍚"
+   "emoji": "🍚",
+   "photo": "vangi_bath.jpg"
   },
   {
    "id": "ragi_mudde_mane__puliyogare",
@@ -1330,7 +1450,8 @@
    "price": 100,
    "description": "",
    "bestseller": false,
-   "emoji": "🍚"
+   "emoji": "🍚",
+   "photo": "puliyogare.jpg"
   },
   {
    "id": "ragi_mudde_mane__holige_2",
@@ -1341,7 +1462,8 @@
    "price": 80,
    "description": "Obbattu with ghee",
    "bestseller": true,
-   "emoji": "🍰"
+   "emoji": "🍰",
+   "photo": "obbattu.jpg"
   },
   {
    "id": "ragi_mudde_mane__majjige",
@@ -1352,7 +1474,8 @@
    "price": 40,
    "description": "Spiced buttermilk",
    "bestseller": false,
-   "emoji": "🥤"
+   "emoji": "🥤",
+   "photo": "buttermilk_glass_india.jpg"
   },
   {
    "id": "chaat_chowki__pani_puri",
@@ -1363,7 +1486,8 @@
    "price": 65,
    "description": "",
    "bestseller": true,
-   "emoji": "🥙"
+   "emoji": "🥙",
+   "photo": "pani_puri.jpg"
   },
   {
    "id": "chaat_chowki__masala_puri",
@@ -1374,7 +1498,8 @@
    "price": 75,
    "description": "Bengaluru-style",
    "bestseller": true,
-   "emoji": "🥙"
+   "emoji": "🥙",
+   "photo": "masala_puri.jpg"
   },
   {
    "id": "chaat_chowki__dahi_puri",
@@ -1385,7 +1510,8 @@
    "price": 85,
    "description": "",
    "bestseller": false,
-   "emoji": "🥙"
+   "emoji": "🥙",
+   "photo": "dahi_puri.jpg"
   },
   {
    "id": "chaat_chowki__sev_puri",
@@ -1396,7 +1522,8 @@
    "price": 70,
    "description": "",
    "bestseller": false,
-   "emoji": "🥙"
+   "emoji": "🥙",
+   "photo": "sev_puri.jpg"
   },
   {
    "id": "chaat_chowki__pav_bhaji",
@@ -1407,7 +1534,8 @@
    "price": 125,
    "description": "",
    "bestseller": true,
-   "emoji": "🥙"
+   "emoji": "🥙",
+   "photo": "pav_bhaji.jpg"
   },
   {
    "id": "chaat_chowki__samosa_chaat",
@@ -1418,7 +1546,8 @@
    "price": 90,
    "description": "",
    "bestseller": false,
-   "emoji": "🥙"
+   "emoji": "🥙",
+   "photo": "samosa_chaat.jpg"
   },
   {
    "id": "chaat_chowki__masala_lemon_soda",
@@ -1429,7 +1558,8 @@
    "price": 50,
    "description": "",
    "bestseller": false,
-   "emoji": "🥤"
+   "emoji": "🥤",
+   "photo": "lemon_soda.jpg"
   },
   {
    "id": "roll_with_it__chicken_tikka_roll",
@@ -1440,7 +1570,8 @@
    "price": 170,
    "description": "",
    "bestseller": true,
-   "emoji": "🌯"
+   "emoji": "🌯",
+   "photo": "kathi_roll.jpg"
   },
   {
    "id": "roll_with_it__egg_roll",
@@ -1451,7 +1582,8 @@
    "price": 120,
    "description": "",
    "bestseller": false,
-   "emoji": "🌯"
+   "emoji": "🌯",
+   "photo": "egg_roll_kolkata.jpg"
   },
   {
    "id": "roll_with_it__paneer_tikka_roll",
@@ -1462,7 +1594,8 @@
    "price": 140,
    "description": "",
    "bestseller": true,
-   "emoji": "🌯"
+   "emoji": "🌯",
+   "photo": "kathi_roll.jpg"
   },
   {
    "id": "roll_with_it__double_egg_chicken_roll",
@@ -1473,7 +1606,8 @@
    "price": 200,
    "description": "",
    "bestseller": false,
-   "emoji": "🌯"
+   "emoji": "🌯",
+   "photo": "kathi_roll.jpg"
   },
   {
    "id": "roll_with_it__aloo_masala_roll",
@@ -1484,7 +1618,8 @@
    "price": 110,
    "description": "",
    "bestseller": false,
-   "emoji": "🌯"
+   "emoji": "🌯",
+   "photo": "kathi_roll.jpg"
   },
   {
    "id": "roll_with_it__masala_fries",
@@ -1495,7 +1630,8 @@
    "price": 100,
    "description": "",
    "bestseller": false,
-   "emoji": "🍟"
+   "emoji": "🍟",
+   "photo": "french_fries.jpg"
   },
   {
    "id": "roll_with_it__thums_up_300ml",
@@ -1506,7 +1642,8 @@
    "price": 40,
    "description": "",
    "bestseller": false,
-   "emoji": "🥤"
+   "emoji": "🥤",
+   "photo": "cola_glass_ice.jpg"
   },
   {
    "id": "shawarma_shack__chicken_shawarma_roll",
@@ -1517,7 +1654,8 @@
    "price": 140,
    "description": "Garlic toum, pickles",
    "bestseller": true,
-   "emoji": "🥙"
+   "emoji": "🥙",
+   "photo": "shawarma_wrap.jpg"
   },
   {
    "id": "shawarma_shack__plate_shawarma",
@@ -1528,7 +1666,8 @@
    "price": 230,
    "description": "",
    "bestseller": true,
-   "emoji": "🥙"
+   "emoji": "🥙",
+   "photo": "shawarma_plate.jpg"
   },
   {
    "id": "shawarma_shack__alfaham_chicken_quarter",
@@ -1539,7 +1678,8 @@
    "price": 275,
    "description": "",
    "bestseller": true,
-   "emoji": "🍗"
+   "emoji": "🍗",
+   "photo": "alfaham.jpg"
   },
   {
    "id": "shawarma_shack__peri_peri_alfaham_half",
@@ -1550,7 +1690,8 @@
    "price": 400,
    "description": "",
    "bestseller": false,
-   "emoji": "🍗"
+   "emoji": "🍗",
+   "photo": "grilled_chicken_peri_peri.jpg"
   },
   {
    "id": "shawarma_shack__hummus_pita",
@@ -1561,7 +1702,8 @@
    "price": 200,
    "description": "",
    "bestseller": false,
-   "emoji": "🍟"
+   "emoji": "🍟",
+   "photo": "hummus_pita.jpg"
   },
   {
    "id": "shawarma_shack__falafel_6",
@@ -1572,7 +1714,8 @@
    "price": 170,
    "description": "",
    "bestseller": false,
-   "emoji": "🍟"
+   "emoji": "🍟",
+   "photo": "falafel.jpg"
   },
   {
    "id": "shawarma_shack__kunafa",
@@ -1583,7 +1726,8 @@
    "price": 250,
    "description": "",
    "bestseller": false,
-   "emoji": "🍰"
+   "emoji": "🍰",
+   "photo": "kunafa.jpg"
   },
   {
    "id": "green_bowl_co__quinoa_power_bowl",
@@ -1594,7 +1738,8 @@
    "price": 360,
    "description": "Quinoa, chickpeas, greens, tahini",
    "bestseller": true,
-   "emoji": "🥗"
+   "emoji": "🥗",
+   "photo": "quinoa_salad_bowl.jpg"
   },
   {
    "id": "green_bowl_co__paneer_protein_bowl",
@@ -1605,7 +1750,8 @@
    "price": 350,
    "description": "",
    "bestseller": true,
-   "emoji": "🥗"
+   "emoji": "🥗",
+   "photo": "paneer_salad.jpg"
   },
   {
    "id": "green_bowl_co__greek_salad",
@@ -1616,7 +1762,8 @@
    "price": 280,
    "description": "",
    "bestseller": false,
-   "emoji": "🥗"
+   "emoji": "🥗",
+   "photo": "greek_salad.jpg"
   },
   {
    "id": "green_bowl_co__sprouts_chaat_salad",
@@ -1627,7 +1774,8 @@
    "price": 210,
    "description": "",
    "bestseller": false,
-   "emoji": "🥗"
+   "emoji": "🥗",
+   "photo": "sprouts_salad.jpg"
   },
   {
    "id": "green_bowl_co__millet_wrap",
@@ -1638,7 +1786,8 @@
    "price": 230,
    "description": "",
    "bestseller": false,
-   "emoji": "🌯"
+   "emoji": "🌯",
+   "photo": "veg_wrap.jpg"
   },
   {
    "id": "green_bowl_co__peanut_butter_banana_smoothie",
@@ -1649,7 +1798,8 @@
    "price": 200,
    "description": "",
    "bestseller": true,
-   "emoji": "🥤"
+   "emoji": "🥤",
+   "photo": "banana_smoothie.jpg"
   },
   {
    "id": "green_bowl_co__ragi_malt_shake",
@@ -1671,7 +1821,8 @@
    "price": 85,
    "description": "Classic midnight fuel",
    "bestseller": true,
-   "emoji": "🍜"
+   "emoji": "🍜",
+   "photo": "maggi_noodles.jpg"
   },
   {
    "id": "midnight_maggi_co__cheese_maggi",
@@ -1682,7 +1833,8 @@
    "price": 110,
    "description": "",
    "bestseller": true,
-   "emoji": "🍜"
+   "emoji": "🍜",
+   "photo": "maggi_noodles.jpg"
   },
   {
    "id": "midnight_maggi_co__schezwan_maggi",
@@ -1693,7 +1845,8 @@
    "price": 110,
    "description": "",
    "bestseller": false,
-   "emoji": "🍜"
+   "emoji": "🍜",
+   "photo": "instant_noodles_bowl.jpg"
   },
   {
    "id": "midnight_maggi_co__bun_maska",
@@ -1704,7 +1857,8 @@
    "price": 65,
    "description": "",
    "bestseller": false,
-   "emoji": "🥪"
+   "emoji": "🥪",
+   "photo": "bun_maska.jpg"
   },
   {
    "id": "midnight_maggi_co__veg_puff",
@@ -1726,7 +1880,8 @@
    "price": 30,
    "description": "",
    "bestseller": true,
-   "emoji": "🥤"
+   "emoji": "🥤",
+   "photo": "masala_chai.jpg"
   },
   {
    "id": "midnight_maggi_co__badam_milk",
@@ -1737,7 +1892,8 @@
    "price": 60,
    "description": "",
    "bestseller": false,
-   "emoji": "🥤"
+   "emoji": "🥤",
+   "photo": "badam_milk.jpg"
   },
   {
    "id": "filter_kaapi_club__filter_coffee",
@@ -1748,7 +1904,8 @@
    "price": 45,
    "description": "Chicory blend, by-two",
    "bestseller": true,
-   "emoji": "☕"
+   "emoji": "☕",
+   "photo": "south_indian_filter_coffee.jpg"
   },
   {
    "id": "filter_kaapi_club__cold_filter_coffee",
@@ -1759,7 +1916,8 @@
    "price": 120,
    "description": "",
    "bestseller": true,
-   "emoji": "☕"
+   "emoji": "☕",
+   "photo": "iced_coffee_glass.jpg"
   },
   {
    "id": "filter_kaapi_club__cappuccino",
@@ -1770,7 +1928,8 @@
    "price": 160,
    "description": "",
    "bestseller": false,
-   "emoji": "☕"
+   "emoji": "☕",
+   "photo": "cappuccino.jpg"
   },
   {
    "id": "filter_kaapi_club__mangalore_buns_2",
@@ -1781,7 +1940,8 @@
    "price": 70,
    "description": "",
    "bestseller": true,
-   "emoji": "🥪"
+   "emoji": "🥪",
+   "photo": "mangalore_buns.jpg"
   },
   {
    "id": "filter_kaapi_club__khara_bath",
@@ -1792,7 +1952,8 @@
    "price": 75,
    "description": "",
    "bestseller": false,
-   "emoji": "🥪"
+   "emoji": "🥪",
+   "photo": "upma.jpg"
   },
   {
    "id": "filter_kaapi_club__maddur_vada",
@@ -1803,7 +1964,8 @@
    "price": 65,
    "description": "",
    "bestseller": false,
-   "emoji": "🥪"
+   "emoji": "🥪",
+   "photo": "maddur_vada.jpg"
   },
   {
    "id": "filter_kaapi_club__mysore_pak_2",
@@ -1814,7 +1976,8 @@
    "price": 100,
    "description": "",
    "bestseller": false,
-   "emoji": "🍰"
+   "emoji": "🍰",
+   "photo": "mysore_pak.jpg"
   },
   {
    "id": "bakehouse_1947__butter_croissant",
@@ -1825,7 +1988,8 @@
    "price": 105,
    "description": "",
    "bestseller": false,
-   "emoji": "🥐"
+   "emoji": "🥐",
+   "photo": "croissant.jpg"
   },
   {
    "id": "bakehouse_1947__dilpasand",
@@ -1858,7 +2022,8 @@
    "price": 90,
    "description": "",
    "bestseller": false,
-   "emoji": "🍪"
+   "emoji": "🍪",
+   "photo": "coconut_cookies.jpg"
   },
   {
    "id": "cake_walk_bakery__black_forest_pastry",
@@ -1869,7 +2034,8 @@
    "price": 90,
    "description": "",
    "bestseller": true,
-   "emoji": "🍰"
+   "emoji": "🍰",
+   "photo": "black_forest_cake_slice.jpg"
   },
   {
    "id": "cake_walk_bakery__red_velvet_pastry",
@@ -1880,7 +2046,8 @@
    "price": 125,
    "description": "",
    "bestseller": true,
-   "emoji": "🍰"
+   "emoji": "🍰",
+   "photo": "red_velvet_cake_slice.jpg"
   },
   {
    "id": "cake_walk_bakery__chocolate_truffle_cake_500g",
@@ -1891,7 +2058,8 @@
    "price": 580,
    "description": "",
    "bestseller": false,
-   "emoji": "🍰"
+   "emoji": "🍰",
+   "photo": "chocolate_truffle_cake.jpg"
   },
   {
    "id": "cake_walk_bakery__butter_croissant",
@@ -1902,7 +2070,8 @@
    "price": 115,
    "description": "",
    "bestseller": false,
-   "emoji": "🥐"
+   "emoji": "🥐",
+   "photo": "croissant.jpg"
   },
   {
    "id": "cake_walk_bakery__honey_cake_slice",
@@ -1913,7 +2082,8 @@
    "price": 55,
    "description": "Bengaluru Iyengar bakery classic",
    "bestseller": true,
-   "emoji": "🥐"
+   "emoji": "🥐",
+   "photo": "honey_cake.jpg"
   },
   {
    "id": "cake_walk_bakery__dilpasand",
@@ -1946,7 +2116,8 @@
    "price": 90,
    "description": "",
    "bestseller": false,
-   "emoji": "🍪"
+   "emoji": "🍪",
+   "photo": "coconut_cookies.jpg"
   },
   {
    "id": "sugar_rush_desserts__death_by_chocolate",
@@ -1957,7 +2128,8 @@
    "price": 250,
    "description": "The legendary one",
    "bestseller": true,
-   "emoji": "🍨"
+   "emoji": "🍨",
+   "photo": "chocolate_sundae.jpg"
   },
   {
    "id": "sugar_rush_desserts__hot_chocolate_fudge",
@@ -1968,7 +2140,8 @@
    "price": 210,
    "description": "",
    "bestseller": true,
-   "emoji": "🍨"
+   "emoji": "🍨",
+   "photo": "hot_fudge_sundae.jpg"
   },
   {
    "id": "sugar_rush_desserts__tender_coconut_scoop",
@@ -1979,7 +2152,8 @@
    "price": 110,
    "description": "",
    "bestseller": false,
-   "emoji": "🍦"
+   "emoji": "🍦",
+   "photo": "coconut_ice_cream.jpg"
   },
   {
    "id": "sugar_rush_desserts__mango_alphonso_scoop",
@@ -1990,7 +2164,8 @@
    "price": 105,
    "description": "",
    "bestseller": false,
-   "emoji": "🍦"
+   "emoji": "🍦",
+   "photo": "mango_ice_cream.jpg"
   },
   {
    "id": "sugar_rush_desserts__nutella_waffle",
@@ -2001,7 +2176,8 @@
    "price": 200,
    "description": "",
    "bestseller": false,
-   "emoji": "🧇"
+   "emoji": "🧇",
+   "photo": "waffle_chocolate.jpg"
   },
   {
    "id": "sugar_rush_desserts__walnut_brownie",
@@ -2012,7 +2188,8 @@
    "price": 130,
    "description": "",
    "bestseller": false,
-   "emoji": "🍫"
+   "emoji": "🍫",
+   "photo": "walnut_brownie.jpg"
   },
   {
    "id": "sugar_rush_desserts__oreo_thick_shake",
@@ -2023,7 +2200,8 @@
    "price": 195,
    "description": "",
    "bestseller": false,
-   "emoji": "🥤"
+   "emoji": "🥤",
+   "photo": "chocolate_milkshake.jpg"
   },
   {
    "id": "kulfi_katte__malai_kulfi",
@@ -2034,7 +2212,8 @@
    "price": 55,
    "description": "",
    "bestseller": true,
-   "emoji": "🍡"
+   "emoji": "🍡",
+   "photo": "kulfi.jpg"
   },
   {
    "id": "kulfi_katte__pista_kulfi",
@@ -2045,7 +2224,8 @@
    "price": 75,
    "description": "",
    "bestseller": true,
-   "emoji": "🍡"
+   "emoji": "🍡",
+   "photo": "kulfi.jpg"
   },
   {
    "id": "kulfi_katte__kesar_badam_kulfi",
@@ -2056,7 +2236,8 @@
    "price": 80,
    "description": "",
    "bestseller": false,
-   "emoji": "🍡"
+   "emoji": "🍡",
+   "photo": "kulfi.jpg"
   },
   {
    "id": "kulfi_katte__matka_kulfi",
@@ -2067,7 +2248,8 @@
    "price": 95,
    "description": "",
    "bestseller": false,
-   "emoji": "🍡"
+   "emoji": "🍡",
+   "photo": "matka_kulfi.jpg"
   },
   {
    "id": "kulfi_katte__royal_falooda",
@@ -2078,7 +2260,8 @@
    "price": 150,
    "description": "",
    "bestseller": true,
-   "emoji": "🍧"
+   "emoji": "🍧",
+   "photo": "falooda.jpg"
   },
   {
    "id": "kulfi_katte__rose_falooda",
@@ -2089,7 +2272,8 @@
    "price": 130,
    "description": "",
    "bestseller": false,
-   "emoji": "🍧"
+   "emoji": "🍧",
+   "photo": "falooda.jpg"
   },
   {
    "id": "kulfi_katte__jalebi_200g",
@@ -2100,7 +2284,8 @@
    "price": 75,
    "description": "",
    "bestseller": false,
-   "emoji": "🍬"
+   "emoji": "🍬",
+   "photo": "jalebi.jpg"
   }
  ]
 }

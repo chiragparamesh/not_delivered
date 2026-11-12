@@ -63,11 +63,12 @@ class _TrackingScreenState extends ConsumerState<TrackingScreen> {
     final order = ref.watch(ordersProvider).where((o) => o.id == widget.orderId).firstOrNull;
     if (order == null) return Scaffold(appBar: AppBar(), body: const Center(child: Text('Order not found')));
     final now = ref.watch(clockProvider)();
-    final st = trackingStatus(placedAt: order.placedAt, now: now, easterEgg: order.easterEgg, deliveredAt: order.deliveredAt);
+    final st = trackingStatus(placedAt: order.placedAt, now: now, easterEgg: order.easterEgg, etaMins: order.etaMins, prepMins: order.prepMins, deliveredAt: order.deliveredAt);
     final delivered = st.stage == TrackingStage.delivered;
     final theme = Theme.of(context);
-    final mm = (st.secondsLeft ~/ 60).toString();
-    final ss = (st.secondsLeft % 60).toString().padLeft(2, '0');
+    final minsLeft = (st.secondsLeft / 60).ceil();
+    final by = order.expectedAt;
+    final byText = '${by.hour % 12 == 0 ? 12 : by.hour % 12}:${by.minute.toString().padLeft(2, '0')} ${by.hour < 12 ? 'am' : 'pm'}';
 
     return Scaffold(
       appBar: AppBar(
@@ -83,9 +84,10 @@ class _TrackingScreenState extends ConsumerState<TrackingScreen> {
               child: Padding(
                 padding: const EdgeInsets.all(20),
                 child: Column(crossAxisAlignment: CrossAxisAlignment.start, children: [
-                  Text(delivered ? 'Delivered! 🎉' : 'Arriving in $mm:$ss',
+                  Text(delivered ? 'Delivered! 🎉' : 'Arriving in $minsLeft min${minsLeft == 1 ? '' : 's'}',
                       key: const Key('eta'),
                       style: theme.textTheme.headlineSmall?.copyWith(color: Colors.white)),
+                  if (!delivered) Text('by $byText', style: const TextStyle(color: Colors.white70)),
                   const SizedBox(height: 4),
                   Text(stageLabels[st.stage]!, style: const TextStyle(color: AppColors.gold, fontWeight: FontWeight.w600)),
                   const SizedBox(height: 12),
@@ -151,7 +153,7 @@ class _TrackingScreenState extends ConsumerState<TrackingScreen> {
             ),
           ],
         ),
-        if (st.showEasterEgg) _EasterEgg(elapsedInEgg: st.elapsedSec - (stageStartSec[TrackingStage.delivered]! - easterEggSec)),
+        if (st.showEasterEgg) _EasterEgg(elapsedInEgg: st.elapsedSec - (st.totalSec - easterEggSec)),
         Align(
           alignment: Alignment.topCenter,
           child: ConfettiWidget(
